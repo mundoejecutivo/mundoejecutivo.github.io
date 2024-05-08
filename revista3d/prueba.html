@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ME</title>
+
+
+
+    <link rel="stylesheet" href="assets/styles/main2.css">
+
+
+
+    <link rel="stylesheet" type="text/css" href="revista3D/css/flipbook.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+    <script src="revista3D/js/flipbook.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#container').flipBook({
+                pdfUrl: 'revista3D/revista-abril/assets/pdf/book.pdf',
+            });
+        });
+    </script>
+
+
+
+
+
+    <style>
+        .main_contenedor{
+            position:absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .frame_book{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="main_contenedor">
+        <iframe src="https://online.fliphtml5.com/akgmq/calu/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="frame_book"></iframe>
+    </div>
+
+</body>
+</html>
