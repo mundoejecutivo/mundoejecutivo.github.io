@@ -12,8 +12,7 @@
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  border: 0;
-}
+  border: 0; }
 
 .fr-view img.fr-rounded, .fr-view .fr-img-caption.fr-rounded img {
   border-radius: 10px;
@@ -21539,7 +21538,7 @@ a.pswp__share--download:hover {
   }
   to {
     transform-origin: center center;
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50% !important, -50% !important, 0);
     opacity: 1;
   }
 }
@@ -21547,7 +21546,7 @@ a.pswp__share--download:hover {
 @keyframes customAnimationOut {
   from {
     transform-origin: center center;
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50% !important, -50% !important, 0);
     opacity: 1;
   }
   to {
@@ -21556,7 +21555,6 @@ a.pswp__share--download:hover {
     opacity: var(--animation-custom_in-opacity);
   }
 }
-
 .customAnimationIn {
   animation-name: customAnimationIn;
 }
