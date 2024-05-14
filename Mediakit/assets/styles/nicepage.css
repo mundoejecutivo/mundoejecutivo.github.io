@@ -42719,3 +42719,24 @@ html { font-size: 16px; }
     color: #ff0026;
   }
 }
+
+
+.texto_ancla{
+  color: #D9232A;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.texto_ancla:hover{
+  color: #a61419;
+}
+
+.texto_ancla_2{
+  color: #000000;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.texto_ancla_2:hover{
+  color: #a61419;
+}
