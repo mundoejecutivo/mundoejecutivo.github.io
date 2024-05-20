@@ -17,18 +17,17 @@
     <script type="text/javascript">
         jQuery(document).ready(function () {
             jQuery('#container').flipBook({
-                pdfUrl: 'revista3D/revista-abril/assets/pdf/book.pdf',
+                pdfUrl: 'revista3D/revista-abril/assets/pdf/book_compressed.pdf',
             });
         });
     </script>
-
-
-
-
+</head>
+<body>
 
     <style>
-        .main_contenedor{
-            position:absolute;
+        .contenedor_revista{
+            background-color: #525559;
+            position: absolute;
             top: 0%;
             left: 0%;
             width: 100%;
@@ -38,18 +37,10 @@
             justify-content: center;
             align-content: center;
         }
-
-        .frame_book{
-            width: 100%;
-            height: 100%;
-        }
     </style>
-</head>
-<body>
 
-
-    <div class="main_contenedor">
-        <iframe src="https://online.fliphtml5.com/akgmq/calu/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="frame_book"></iframe>
+    <div class="contenedor_revista">
+        <div id="container" class="tb_tempo_prueba" style="width: 90%; left: 5%;"></div>
     </div>
 
 </body>
