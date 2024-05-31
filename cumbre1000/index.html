@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<link rel="stylesheet" href="assets/sistemas/demo/demo.css">
+<link rel="stylesheet" href="assets/sistemas/dist/jquery.flipster.min.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<body>
+    <header class="header" id="mi-contenedor">
+        <nav class="nav">
+            <div class="contenedor-logo">
+                <img src="assets/images/logo.png" title="CUMBRE 1000 ASISTIR" title="CUMBRE 1000 ASISTIR" class="imagen-logo-2">
+            </div>
+            <ul class="ul">
+                <li class="li">
+                    <a href="index.html " class="li-a-texto ">Patrocinar</a>
+                </li>
+                <li class="li">
+                    <a href="about.html " class="li-a-texto ">Ubicación</a>
+                </li>
+                <li class="li">
+                    <a href="contact.html " class="li-a-texto ">Panelistas</a>
+                </li>
+                <li class="li-button">
+                    <a href="contact.html " class="li-a-texto ">Asistir</a>
+                </li>
+                <div class="contenedor-menu">
+                    <i class="fa fa-bars menu-celular" style="font-size: 30px;" onclick="menu()"></i>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <main class="main">
+
+        <section class="section-universal" style="z-index: 2; box-shadow: 0px 5px 8px #00000099;">
+            <img src="assets/images/imagen_cumbre1000_1.jpeg" alt="CUMBRE 1000 ASISTIR" title="CUMBRE 1000 ASISTIR" loading="lazy " class="imagen-principal">
+
+            <div class="contenedor-superpuesto-imagen-principal">
+                <div class="contenedor-superpuesto-imagen-principal-seccion-1">
+                    <div class="linea "></div>
+                    <div class="contenedor-superpuesto-linea">
+                        <div class="circulo">
+                            <p class="texto_circulos">1</p>
+                        </div>
+                        <div class="circulo">
+                            <p class="texto_circulos">0</p>
+                        </div>
+                        <div class="circulo">
+                            <p class="texto_circulos">0</p>
+                        </div>
+                        <div class="circulo">
+                            <p class="texto_circulos">0</p>
+                        </div>
+                        <div class="circulo">
+                            <p class="texto_circulos">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-superpuesto-imagen-principal-seccion-2">
+                    <p class="texto-bienvenida-titulo" data-aos="fade-right" data-aos-duration="3000">CUMBRE 1000</p>
+                    <p class="texto-bienvenida-descripcion" data-aos="fade-right" data-aos-duration="3000">
+                        ¡Únete a la Cumbre de las 1000 Empresas Más Grandes de México y sé parte de un evento excepcional donde la innovación y las oportunidades se fusionan para impulsar el crecimiento empresarial! Conéctate con líderes visionarios y aprende de las mejores
+                        prácticas en el mundo empresarial. ¡No te lo pierdas!</p>
+                    <div class="contenedor-boton">
+                        <button class="boton-principal">ASISTIR</button>
+                    </div>
+                </div>
+                <div class="contenedor-superpuesto-imagen-principal-seccion-3 ">
+                    <img src="assets/images/logo.png" alt="CUMBRE 1000" title="CUMBRE 1000" class="imagen-logo-principal">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-universal fondo-azul-section padding-gap-section">
+            <p class="texto-universal-section" data-aos="fade-down">PANELISTAS</p>
+        </section>
+
+
+
+        <section class="section-universal fondo-imagen1-section padding-gap-section">
+            <p class="texto-universal-section" data-aos="fade-down">MIRA NUESTRAS ENTREGAS</p>
+
+            <div id="coverflow" style="width: 100%; padding: 0%; margin: 0%;">
+                <ul class="flip-items">
+                    <li data-flip-title="Red">
+                        <img src="assets/sistemas/demo/img/imagen_5.webp" alt="Revista 0">
+                    </li>
+                    <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                        <img src="assets/sistemas/demo/img/imagen_6.webp" alt="Revita 1">
+                    </li>
+                    <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                        <img src="assets/sistemas/demo/img/imagen_4.webp" alt="Revita 2">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <section class="section-universal fondo-imagen2-section padding-gap-section box-shadown-section padding2-gap-section">
+            <p class="texto-universal-section" data-aos="fade-down">¿QUÉ ES CUMBRE 1000?</p>
+            <p class="texto-universal-descripcion-section" data-aos="fade-right">TEXTO DESCRIPCIÓN PARA EJEMPLIFICAR UNA IDEA TEXTO DESCRIPCIÓN PARA EJEMPLIFICAR </p>
+            <div class="contenedor-boton-section" data-aos="zoom-in">
+                <button class="boton_1">INFORMACIÓN</button>
+            </div>
+
+            <div class="contenedor-boton-section gap-section" style="margin-top: 50px;">
+                <div class="tarjeta-imagen-section">
+                    <img src="assets/images/altavoz.png" alt="Panelistas" title="Panelistas" class="imagen-section">
+                    <p class="texto-tarjeta-section">PANELISTAS</p>
+                </div>
+                <div class="tarjeta-imagen-section">
+                    <img src="assets/images/innovacion.png" alt="Temas" title="Temas" class="imagen-section">
+                    <p class="texto-tarjeta-section">TEMAS</p>
+                </div>
+                <div class="tarjeta-imagen-section">
+                    <img src="assets/images/personas.png" alt="Audiencia" title="Audiencia" class="imagen-section">
+                    <p class="texto-tarjeta-section">AUDIENCIA</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-universal fondo-imagen1-section padding-gap-section">
+
+            <div class="contenedor-galeria">
+                <p class="texto-universal-section text-luz" data-aos="fade-down">REVIVE NUESTROS EVENTOS</p>
+                <div class="contenedor-galeria-imagenes">
+                    <img src="assets/images/imagen_cumbre1000_1.jpeg" alt="" title="" class="imagen-galeria margin-1" data-aos="flip-left">
+                    <img src="assets/images/imagen_cumbre1000_2.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left">
+                    <img src="assets/images/imagen_cumbre1000_3.jpeg" alt="" title="" class="imagen-galeria margin-2" data-aos="flip-left">
+                    <img src="assets/images/imagen_cumbre1000_4.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left">
+                    <img src="assets/images/imagen_cumbre1000_5.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left">
+                    <img src="assets/images/imagen_cumbre1000_5.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left">
+                    <img src="assets/images/imagen_cumbre1000_5.jpeg" alt="" title="" class="imagen-galeria margin-3" data-aos="flip-left">
+                    <img src="assets/images/imagen_cumbre1000_5.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left">
+                    <img src="assets/images/imagen_cumbre1000_5.jpeg" alt="" title="" class="imagen-galeria margin-4" data-aos="flip-left">
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="section-universal fondo-azul-section padding-gap-section">
+            <p class="texto-universal-section" data-aos="fade-down">A UN CLICK DE REUNIRSE CON LOS EMPRESARIOS MÁS IMPORTANTES DE MÉXICO</p>
+            <p class="texto-universal-descripcion-section" data-aos="fade-right">Regístrese a este encuentro empresarial de 250 invitados exclusivos que estarán haciendo IMPORTANTES NEGOCIACIONES e impulsando el crecimiento de México.</p>
+            <div class="contenedor-boton-section">
+                <button class="boton-principal ajuste_boton_1">ASISTIR</button>
+            </div>
+            <div class="contenedor-boton-section gap-section margin-top">
+                <div class="tarjeta-imagen-section">
+                    <img src="assets/images/boletos.png" alt="Panelistas" title="Panelistas" class="imagen-section">
+                    <p class="texto-tarjeta-section">¿QUÉ INCLUYE?</p>
+                </div>
+                <div class="tarjeta-imagen-section">
+                    <img src="assets/images/portafolio.png" alt="Temas" title="Temas" class="imagen-section">
+                    <p class="texto-tarjeta-section">¿QUÉ CONSIGO?</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-universal fondo-imagen1-section padding-gap-section">
+            <p class="texto-universal-section" data-aos="fade-down">CONSULTA LA UBICACIÓN</p>
+            <div class="section-universal-mapa" data-aos="flip-down">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5275.565866959247!2d-99.22425850122478!3d19.40976187536385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2019ebbb52bf5%3A0xaa4ca728abb3cf67!2sEmbajada%20de%20Italia!5e0!3m2!1ses!2smx!4v1717124818749!5m2!1ses!2smx"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="frame-mapa"></iframe>
+            </div>
+
+            <div class="section-universal-mapa-texto">
+                <p class="texto-mapa" data-aos="fade-right">DIRECCIÓN DEL EVENTO CUMBRE 1000. TEXTO PARA EJEMPLIFICAR TEXTO PARA EJEMPLIFICAR TEXTO PARA EJEMPLIFICAR TEXTO PARA EJEMPLIFICAR TEXTO PARA</p>
+                <p class="texto-mapa" data-aos="fade-right">30 DE DICIEMNBRE | 15:00 P. M.</p>
+                <div class="contenedor-boton-section" data-aos="zoom-in">
+                    <button class="boton_1">INFORMACIÓN</button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-universal fondo-imagen3-section padding-gap-section" style="box-shadow: 0px -5px 8px #00000099; z-index: 9;">
+            <p class=" texto-universal-section " data-aos="fade-down">FORMA PARTE DE NUESTROS PATROCINADORES</p>
+            <p class="texto-universal-descripcion-section " data-aos="fade-right">Organizado por Grupo Mundo Ejecutivo, La Cumbre de las 1000 Empresas más Importantes de México, se ha convertido en un evento emblemático y muy esperado que reúne a los principales líderes que mueven la economía del país.</p>
+            <div id="coverflow2" style="width: 100%; padding: 0%; margin: 0%; ">
+                <ul class="flip-items ">
+                    <li data-flip-title="Red ">
+                        <img src="assets/sistemas/demo/img/imagen_5.webp " alt="Revista 0 ">
+                    </li>
+                    <li data-flip-title="Razzmatazz " data-flip-category="Purples ">
+                        <img src="assets/sistemas/demo/img/imagen_6.webp " alt="Revita 1 ">
+                    </li>
+                    <li data-flip-title="Razzmatazz " data-flip-category="Purples ">
+                        <img src="assets/sistemas/demo/img/imagen_4.webp " alt="Revita 2 ">
+                    </li>
+                </ul>
+            </div>
+            <div class="contenedor-boton-section ">
+                <button class="boton-principal ajuste_boton_1 ">PATROCINAR</button>
+            </div>
+        </section>
+
+
+
+        <section class="section-universal fondo-imagen1-section padding-gap-section">
+            <p class="texto-universal-section" data-aos="fade-down">NUESTROS PATROCINADORES</p>
+        </section>
+
+
+
+        <section class="barra-inferior">
+            <p class="texto-barra-inferior">©Mundo Ejecutivo . All Rights Reserved. & © Cumbre 1000 2024.</p>
+        </section>
+
+
+
+    </main>
+
+
+
+
+    <section class="contenedor-menu-celular " id="id_menu ">
+        <div class="contenedor-menu-celular-seccion-4 ">
+            <i class="fas fa-times cerrar-celular " onclick="cerrar_menu() "></i>
+        </div>
+        <div class="contenedor-menu-celular-seccion-1 ">
+            <img src="assets/images/logo.png " alt="CUMBRE 1000 " title="CUMBRE 1000 " class="imagen-logo-menu ">
+        </div>
+        <div class="contenedor-menu-celular-seccion-2 ">
+            <ul class="ul-menu ">
+                <li class="li-menu ">
+                    <a href="index.html " class="li-a-texto-menu ">Patrocinar</a>
+                </li>
+                <li class="li-menu ">
+                    <a href="about.html " class="li-a-texto-menu ">Ubicación</a>
+                </li>
+                <li class="li-menu ">
+                    <a href="contact.html " class="li-a-texto-menu ">Panelistas</a>
+                </li>
+                <li class="li-menu-button ">
+                    <a href="contact.html " class="li-a-texto-menu ">Asistir</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contenedor-menu-celular-seccion-3 "></div>
+    </section>
+
+
+
+
+    <script src="assets/sistemas/demo/jquery.min.js "></script>
+    <script src="assets/sistemas/dist/jquery.flipster.min.js "></script>
+
+    <script src="assets/scripts/main.js "></script>
+</body>
+
+</html>

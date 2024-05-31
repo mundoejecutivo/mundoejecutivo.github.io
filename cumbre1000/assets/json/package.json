@@ -1,0 +1,27 @@
+{
+    "panelistas": [{
+            "nombre": "John Doe",
+            "cargo": "CEO",
+            "imagen": "https://cumbre1000.com/wp-content/themes/cumbre1000/img/Esther-Riveroll.jpg",
+            "nota": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "nombre": "Jane Smith",
+            "cargo": "Directora de Marketing",
+            "imagen": "https://cumbre1000.com/wp-content/themes/cumbre1000/img/Esther-Riveroll.jpg",
+            "nota": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "nombre": "Alice Johnson",
+            "cargo": "Investigadora Principal",
+            "imagen": "https://cumbre1000.com/wp-content/themes/cumbre1000/img/Esther-Riveroll.jpg",
+            "nota": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "nombre": "Bob Williams",
+            "cargo": "Director Financiero",
+            "imagen": "https://cumbre1000.com/wp-content/themes/cumbre1000/img/Esther-Riveroll.jpg",
+            "nota": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        }
+    ]
+}
