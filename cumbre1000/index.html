@@ -4,32 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CUMBRE 1000</title>
 
     <link rel="stylesheet" href="assets/styles/main.css">
+
+    <link rel="stylesheet" href="assets/sistemas/demo/demo.css">
+    <link rel="stylesheet" href="assets/sistemas/dist/jquery.flipster.min.css">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
-<link rel="stylesheet" href="assets/sistemas/demo/demo.css">
-<link rel="stylesheet" href="assets/sistemas/dist/jquery.flipster.min.css">
-
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 <body>
     <header class="header" id="mi-contenedor">
@@ -39,16 +40,16 @@
             </div>
             <ul class="ul">
                 <li class="li">
-                    <a href="index.html " class="li-a-texto ">Patrocinar</a>
+                    <a href="#id_patrocinar" class="li-a-texto ">Patrocinar</a>
                 </li>
                 <li class="li">
-                    <a href="about.html " class="li-a-texto ">Ubicación</a>
+                    <a href="#id_ubicacion" class="li-a-texto ">Ubicación</a>
                 </li>
                 <li class="li">
-                    <a href="contact.html " class="li-a-texto ">Panelistas</a>
+                    <a href="#id_section_panelistas" class="li-a-texto ">Panelistas</a>
                 </li>
                 <li class="li-button">
-                    <a href="contact.html " class="li-a-texto ">Asistir</a>
+                    <a href="files/asistir.html" class="li-a-texto ">Asistir</a>
                 </li>
                 <div class="contenedor-menu">
                     <i class="fa fa-bars menu-celular" style="font-size: 30px;" onclick="menu()"></i>
@@ -93,18 +94,20 @@
                         ¡Únete a la Cumbre de las 1000 Empresas Más Grandes de México y sé parte de un evento excepcional donde la innovación y las oportunidades se fusionan para impulsar el crecimiento empresarial! Conéctate con líderes visionarios y aprende de las mejores
                         prácticas en el mundo empresarial. ¡No te lo pierdas!</p>
                     <div class="contenedor-boton">
-                        <button class="boton-principal">ASISTIR</button>
+                        <a href="files/asistir.html">
+                            <button class="boton-principal">ASISTIR</button>
+                        </a>
                     </div>
                 </div>
                 <div class="contenedor-superpuesto-imagen-principal-seccion-3 ">
-                    <img src="assets/images/logo.png" alt="CUMBRE 1000" title="CUMBRE 1000" class="imagen-logo-principal">
+                    <img src="assets/images/logo.png" alt="CUMBRE 1000" title="CUMBRE 1000" class="imagen-logo-principal" loading="lazy">
                 </div>
             </div>
         </section>
 
 
 
-        <section class="section-universal fondo-azul-section padding-gap-section">
+        <section class="section-universal fondo-azul-section padding-gap-section" id="id_section_panelistas">
             <p class="texto-universal-section" data-aos="fade-down">PANELISTAS</p>
         </section>
 
@@ -113,24 +116,51 @@
         <section class="section-universal fondo-imagen1-section padding-gap-section">
             <p class="texto-universal-section" data-aos="fade-down">MIRA NUESTRAS ENTREGAS</p>
 
-            <div id="coverflow" style="width: 100%; padding: 0%; margin: 0%;">
-                <ul class="flip-items">
-                    <li data-flip-title="Red">
-                        <img src="assets/sistemas/demo/img/imagen_5.webp" alt="Revista 0">
-                    </li>
-                    <li data-flip-title="Razzmatazz" data-flip-category="Purples">
-                        <img src="assets/sistemas/demo/img/imagen_6.webp" alt="Revita 1">
-                    </li>
-                    <li data-flip-title="Razzmatazz" data-flip-category="Purples">
-                        <img src="assets/sistemas/demo/img/imagen_4.webp" alt="Revita 2">
-                    </li>
-                </ul>
+            <div class="contenedor-carrusel-especial">
+                <div class="tarjeta-contenedor-carrusel-especial-2" data-aos="flip-up">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/abH3xIqJ5pk" title="CUMBRE 1000 EMPRESAS MÁS IMPORTANTES 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="tarjeta-contenedor-carrusel-especial">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tD1mzdYlx-4" title="Mundo Ejecutivo presenta:: La Cumbre de las 1000 Empresas más importantes de México #mundoejecutivo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="tarjeta-contenedor-carrusel-especial-2" data-aos="flip-up">
+                    <iframe width="100%" height="100%"src="https://www.youtube.com/embed/IuDWjWXHurQ" title="Mujeres de poder será uno de los temas centrales en la Cumbre de las 1000 empresas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
 
 
-        <section class="section-universal fondo-imagen2-section padding-gap-section box-shadown-section padding2-gap-section">
+        <section class="section-universal fondo-imagen2-section padding-gap-section box-shadown-section padding2-gap-section estado-flex-oculto" id="id_quees_section_1">
+            <p class="texto-universal-section" data-aos="fade-down">LOS EMPRESARIOS MÁS IMPORTANTES EN UN MISMO EVENTO</p>
+            <p class="texto-universal-descripcion-section" data-aos="fade-right">En áreas de influencia se abordarán en un FORMATO DINÁMICO a través de charlas breves y mesas de debate, los desafíos y las ventanas abiertas para propiciar negocios.</p>
+            <div class="contenedor-imagen-grande-especial">
+                <div class="tarjeta-imagen-section">
+                    <img src="assets/images/altavoz.png" alt="Panelistas" title="Panelistas" class="imagen-section" loading="lazy">
+                    <p class="texto-tarjeta-section">PANELISTAS</p>
+                </div>
+            </div>
+            <div class="contenedor-boton-section" data-aos="zoom-in">
+                <button class="boton_1">INFORMACIÓN</button>
+            </div>
+
+            <div class="contenedor-boton-section gap-section" style="margin-top: 50px;">
+                <div class="tarjeta-imagen-section" onclick="quees_section_2()">
+                    <img src="assets/images/innovacion.png" alt="Temas" title="Temas" class="imagen-section" loading="lazy">
+                    <p class="texto-tarjeta-section">TEMAS</p>
+                </div>
+                <div class="tarjeta-imagen-section" onclick="quees_section_3()">
+                    <img src="assets/images/personas.png" alt="Audiencia" title="Audiencia" class="imagen-section" loading="lazy">
+                    <p class="texto-tarjeta-section">AUDIENCIA</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-universal fondo-imagen2-section padding-gap-section box-shadown-section padding2-gap-section" id="id_quees_section_2">
             <p class="texto-universal-section" data-aos="fade-down">¿QUÉ ES CUMBRE 1000?</p>
             <p class="texto-universal-descripcion-section" data-aos="fade-right">TEXTO DESCRIPCIÓN PARA EJEMPLIFICAR UNA IDEA TEXTO DESCRIPCIÓN PARA EJEMPLIFICAR </p>
             <div class="contenedor-boton-section" data-aos="zoom-in">
@@ -138,17 +168,44 @@
             </div>
 
             <div class="contenedor-boton-section gap-section" style="margin-top: 50px;">
-                <div class="tarjeta-imagen-section">
-                    <img src="assets/images/altavoz.png" alt="Panelistas" title="Panelistas" class="imagen-section">
+                <div class="tarjeta-imagen-section" onclick="quees_section_1()">
+                    <img src="assets/images/altavoz.png" alt="Panelistas" title="Panelistas" class="imagen-section" loading="lazy">
                     <p class="texto-tarjeta-section">PANELISTAS</p>
                 </div>
+                <div class="tarjeta-imagen-section" onclick="quees_section_2()">
+                    <img src="assets/images/innovacion.png" alt="Temas" title="Temas" class="imagen-section" loading="lazy">
+                    <p class="texto-tarjeta-section">TEMAS</p>
+                </div>
+                <div class="tarjeta-imagen-section" onclick="quees_section_3()">
+                    <img src="assets/images/personas.png" alt="Audiencia" title="Audiencia" class="imagen-section" loading="lazy">
+                    <p class="texto-tarjeta-section">AUDIENCIA</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-universal fondo-imagen2-section padding-gap-section box-shadown-section padding2-gap-section estado-flex-oculto" id="id_quees_section_3">
+            <p class="texto-universal-section" data-aos="fade-down" id="id_quees_section_temas_3">50 PROPUESTAS POR MÉXICO CON LAS MENTES MÁS BRILLANTES</p>
+            <p class="texto-universal-descripcion-section" data-aos="fade-right" id="id_quees_section_temas_2">En áreas de influencia se abordarán en un FORMATO DINÁMICO a través de charlas breves y mesas de debate, los desafíos y las ventanas abiertas para propiciar negocios.</p>
+            <div class="contenedor-imagen-grande-especial">
                 <div class="tarjeta-imagen-section">
-                    <img src="assets/images/innovacion.png" alt="Temas" title="Temas" class="imagen-section">
+                    <img src="assets/images/personas.png" alt="Panelistas" title="Panelistas" class="imagen-section" loading="lazy">
+                    <p class="texto-tarjeta-section">AUDIENCIA</p>
+                </div>
+            </div>
+            <div class="contenedor-boton-section" data-aos="zoom-in" id="id_quees_section_temas_1">
+                <button class="boton_1">INFORMACIÓN</button>
+            </div>
+
+            <div class="contenedor-boton-section gap-section" style="margin-top: 50px;" id="id_quees_section_temas">
+                <div class="tarjeta-imagen-section">
+                    <img src="assets/images/innovacion.png" alt="Temas" title="Temas" class="imagen-section" loading="lazy" onclick="quees_section_2()">
                     <p class="texto-tarjeta-section">TEMAS</p>
                 </div>
                 <div class="tarjeta-imagen-section">
-                    <img src="assets/images/personas.png" alt="Audiencia" title="Audiencia" class="imagen-section">
-                    <p class="texto-tarjeta-section">AUDIENCIA</p>
+                    <img src="assets/images/altavoz.png" alt="Audiencia" title="Audiencia" class="imagen-section" loading="lazy" onclick="quees_section_1()">
+                    <p class="texto-tarjeta-section">PANELISTAS</p>
                 </div>
             </div>
         </section>
@@ -160,15 +217,15 @@
             <div class="contenedor-galeria">
                 <p class="texto-universal-section text-luz" data-aos="fade-down">REVIVE NUESTROS EVENTOS</p>
                 <div class="contenedor-galeria-imagenes">
-                    <img src="assets/images/imagen_cumbre1000_1.jpeg" alt="" title="" class="imagen-galeria margin-1" data-aos="flip-left">
-                    <img src="assets/images/imagen_cumbre1000_2.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left">
-                    <img src="assets/images/imagen_cumbre1000_3.jpeg" alt="" title="" class="imagen-galeria margin-2" data-aos="flip-left">
-                    <img src="assets/images/imagen_cumbre1000_4.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left">
-                    <img src="assets/images/imagen_cumbre1000_5.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left">
-                    <img src="assets/images/imagen_cumbre1000_5.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left">
-                    <img src="assets/images/imagen_cumbre1000_5.jpeg" alt="" title="" class="imagen-galeria margin-3" data-aos="flip-left">
-                    <img src="assets/images/imagen_cumbre1000_5.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left">
-                    <img src="assets/images/imagen_cumbre1000_5.jpeg" alt="" title="" class="imagen-galeria margin-4" data-aos="flip-left">
+                    <img src="assets/images/imagen_cumbre1000_1.jpeg" alt="" title="" class="imagen-galeria margin-1" data-aos="flip-left" loading="lazy">
+                    <img src="assets/images/imagen_cumbre1000_2.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left" loading="lazy">
+                    <img src="assets/images/imagen_cumbre1000_3.jpeg" alt="" title="" class="imagen-galeria margin-2" data-aos="flip-left" loading="lazy">
+                    <img src="assets/images/imagen_cumbre1000_4.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left" loading="lazy">
+                    <img src="assets/images/imagen_cumbre1000_5.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left" loading="lazy">
+                    <img src="assets/images/imagen_cumbre1000_12.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left" loading="lazy">
+                    <img src="assets/images/imagen_cumbre1000_11.jpeg" alt="" title="" class="imagen-galeria margin-3" data-aos="flip-left" loading="lazy">
+                    <img src="assets/images/imagen_cumbre1000_10.jpeg" alt="" title="" class="imagen-galeria" data-aos="flip-left" loading="lazy">
+                    <img src="assets/images/imagen_cumbre1000_9.jpeg" alt="" title="" class="imagen-galeria margin-4" data-aos="flip-left" loading="lazy">
                 </div>
             </div>
 
@@ -180,15 +237,17 @@
             <p class="texto-universal-section" data-aos="fade-down">A UN CLICK DE REUNIRSE CON LOS EMPRESARIOS MÁS IMPORTANTES DE MÉXICO</p>
             <p class="texto-universal-descripcion-section" data-aos="fade-right">Regístrese a este encuentro empresarial de 250 invitados exclusivos que estarán haciendo IMPORTANTES NEGOCIACIONES e impulsando el crecimiento de México.</p>
             <div class="contenedor-boton-section">
-                <button class="boton-principal ajuste_boton_1">ASISTIR</button>
+                <a href="files/asistir.html">
+                    <button class="boton-principal ajuste_boton_1">ASISTIR</button>
+                </a>
             </div>
             <div class="contenedor-boton-section gap-section margin-top">
                 <div class="tarjeta-imagen-section">
-                    <img src="assets/images/boletos.png" alt="Panelistas" title="Panelistas" class="imagen-section">
+                    <img src="assets/images/boletos.png" alt="Panelistas" title="Panelistas" class="imagen-section" loading="lazy">
                     <p class="texto-tarjeta-section">¿QUÉ INCLUYE?</p>
                 </div>
                 <div class="tarjeta-imagen-section">
-                    <img src="assets/images/portafolio.png" alt="Temas" title="Temas" class="imagen-section">
+                    <img src="assets/images/portafolio.png" alt="Temas" title="Temas" class="imagen-section" loading="lazy">
                     <p class="texto-tarjeta-section">¿QUÉ CONSIGO?</p>
                 </div>
             </div>
@@ -196,7 +255,7 @@
 
 
 
-        <section class="section-universal fondo-imagen1-section padding-gap-section">
+        <section class="section-universal fondo-imagen1-section padding-gap-section" id="id_ubicacion">
             <p class="texto-universal-section" data-aos="fade-down">CONSULTA LA UBICACIÓN</p>
             <div class="section-universal-mapa" data-aos="flip-down">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5275.565866959247!2d-99.22425850122478!3d19.40976187536385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2019ebbb52bf5%3A0xaa4ca728abb3cf67!2sEmbajada%20de%20Italia!5e0!3m2!1ses!2smx!4v1717124818749!5m2!1ses!2smx"
@@ -214,24 +273,26 @@
 
 
 
-        <section class="section-universal fondo-imagen3-section padding-gap-section" style="box-shadow: 0px -5px 8px #00000099; z-index: 9;">
-            <p class=" texto-universal-section " data-aos="fade-down">FORMA PARTE DE NUESTROS PATROCINADORES</p>
-            <p class="texto-universal-descripcion-section " data-aos="fade-right">Organizado por Grupo Mundo Ejecutivo, La Cumbre de las 1000 Empresas más Importantes de México, se ha convertido en un evento emblemático y muy esperado que reúne a los principales líderes que mueven la economía del país.</p>
-            <div id="coverflow2" style="width: 100%; padding: 0%; margin: 0%; ">
-                <ul class="flip-items ">
-                    <li data-flip-title="Red ">
-                        <img src="assets/sistemas/demo/img/imagen_5.webp " alt="Revista 0 ">
-                    </li>
-                    <li data-flip-title="Razzmatazz " data-flip-category="Purples ">
-                        <img src="assets/sistemas/demo/img/imagen_6.webp " alt="Revita 1 ">
-                    </li>
-                    <li data-flip-title="Razzmatazz " data-flip-category="Purples ">
-                        <img src="assets/sistemas/demo/img/imagen_4.webp " alt="Revita 2 ">
-                    </li>
-                </ul>
+        <section class="section-universal fondo-imagen3-section padding-gap-section" style="box-shadow: 0px -5px 8px #00000099; z-index: 9;" id="id_patrocinar">
+            <p class=" texto-universal-section" data-aos="fade-down">FORMA PARTE DE NUESTROS PATROCINADORES</p>
+            <p class="texto-universal-descripcion-section" data-aos="fade-right">Organizado por Grupo Mundo Ejecutivo, La Cumbre de las 1000 Empresas más Importantes de México, se ha convertido en un evento emblemático y muy esperado que reúne a los principales líderes que mueven la economía del país.</p>
+
+            <div class="contenedor-carrusel-especial">
+                <div class="tarjeta-contenedor-carrusel-especial-2" data-aos="flip-up">
+                    <img src="assets/images/imagen_cumbre1000_7.jpeg" alt="" title="" class="imagen-tajeta-especial" loading="lazy" style="transform: scale(1.3);">
+                </div>
+
+                <div class="tarjeta-contenedor-carrusel-especial">
+                    <img src="assets/images/imagen_cumbre1000_6.jpeg" alt="" title="" class="imagen-tajeta-especial" loading="lazy" style="transform: scale(1.3);">
+                </div>
+
+                <div class="tarjeta-contenedor-carrusel-especial-2" data-aos="flip-up">
+                    <img src="assets/images/imagen_cumbre1000_8.jpeg" alt="" title="" class="imagen-tajeta-especial" loading="lazy" style="transform: scale(1.3);">
+                </div>
             </div>
+
             <div class="contenedor-boton-section ">
-                <button class="boton-principal ajuste_boton_1 ">PATROCINAR</button>
+                <button class="boton-principal ajuste_boton_1">PATROCINAR</button>
             </div>
         </section>
 
@@ -258,35 +319,35 @@
         <div class="contenedor-menu-celular-seccion-4 ">
             <i class="fas fa-times cerrar-celular " onclick="cerrar_menu()"></i>
         </div>
-        <div class="contenedor-menu-celular-seccion-1 ">
-            <img src="assets/images/logo.png " alt="CUMBRE 1000 " title="CUMBRE 1000 " class="imagen-logo-menu ">
+        <div class="contenedor-menu-celular-seccion-1">
+            <img src="assets/images/logo.png " alt="CUMBRE 1000" title="CUMBRE 1000" class="imagen-logo-menu" loading="lazy">
         </div>
-        <div class="contenedor-menu-celular-seccion-2 ">
-            <ul class="ul-menu ">
-                <li class="li-menu ">
-                    <a href="index.html " class="li-a-texto-menu ">Patrocinar</a>
+        <div class="contenedor-menu-celular-seccion-2">
+            <ul class="ul-menu">
+                <li class="li-menu">
+                    <a href="index.html" class="li-a-texto-menu">Patrocinar</a>
                 </li>
                 <li class="li-menu ">
-                    <a href="about.html " class="li-a-texto-menu ">Ubicación</a>
+                    <a href="about.html" class="li-a-texto-menu">Ubicación</a>
                 </li>
                 <li class="li-menu ">
-                    <a href="contact.html " class="li-a-texto-menu ">Panelistas</a>
+                    <a href="contact.htm" class="li-a-texto-menu">Panelistas</a>
                 </li>
-                <li class="li-menu-button ">
-                    <a href="contact.html " class="li-a-texto-menu ">Asistir</a>
+                <li class="li-menu-button">
+                    <a href="files/asistir.html" class="li-a-texto-menu">Asistir</a>
                 </li>
             </ul>
         </div>
-        <div class="contenedor-menu-celular-seccion-3 "></div>
+        <div class="contenedor-menu-celular-seccion-3"></div>
     </section>
 
 
 
 
-    <script src="assets/sistemas/demo/jquery.min.js "></script>
-    <script src="assets/sistemas/dist/jquery.flipster.min.js "></script>
+    <script src="assets/sistemas/demo/jquery.min.js"></script>
+    <script src="assets/sistemas/dist/jquery.flipster.min.js"></script>
 
-    <script src="assets/scripts/main.js "></script>
+    <script src="assets/scripts/main.js"></script>
 
 </body>
 
