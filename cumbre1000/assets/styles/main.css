@@ -46,7 +46,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-content: start;
-    z-index: 3;
+    z-index: 4;
 }
 
 .gap-section {
@@ -401,7 +401,7 @@ main {
     top: 0%;
     left: 0%;
     background-color: #002150;
-    z-index: 4;
+    z-index: 99;
 }
 
 .contenedor-menu-celular-seccion-1 {
@@ -545,6 +545,27 @@ main {
 
 .li-button:active {
     transform: scale(0.9);
+}
+
+.li-lista-section{
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.ul-lista-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    height: auto;
 }
 
 .contenedor-logo {
@@ -2152,6 +2173,27 @@ main {
         height: 350px;
     }
 
+    .ul-lista-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 90%;
+        height: auto;
+    }
+
+    .li-lista-section{
+        color: #ffffff;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
     .contenedor-carrusel-especial {
         display: flex;
         flex-wrap: wrap;
@@ -2696,13 +2738,54 @@ main {
         height: auto;
         grid-gap: 25px 25px;
         position: static;
-    
+    }
+
+    .ul-lista-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 90%;
+        height: auto;
+    }
+
+    .li-lista-section{
+        color: #ffffff;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
     }
 }
 
 @media screen and (min-width: 300px) and (max-width: 399px) {
     .imagen-principal {
         height: 300px;
+    }
+
+    .ul-lista-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 90%;
+        height: auto;
+    }
+
+    .li-lista-section{
+        color: #ffffff;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
     }
 
     .formulario{
@@ -3018,6 +3101,27 @@ main {
 @media screen and (min-width: 200px) and (max-width: 299px) {
     .imagen-principal {
         height: 300px;
+    }
+
+    .ul-lista-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 90%;
+        height: auto;
+    }
+
+    .li-lista-section{
+        color: #ffffff;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
     }
     
     .formulario{
