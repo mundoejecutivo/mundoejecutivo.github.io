@@ -338,6 +338,58 @@ main {
     transition: 0.25s;
 }
 
+.contenedor-carrusel-especial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    grid-gap: 25px 25px;
+    position: relative; /* Asegura que el contenedor padre tenga una posición relativa */
+
+}
+
+.tarjeta-contenedor-carrusel-especial {
+    position: absolute; /* La tarjeta tiene posición absoluta dentro del contenedor */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px #cccccc solid;
+    width: 40%;
+    height: 400px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    transition: 0.25s;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0px 0px 15px #000000;
+}
+
+.tarjeta-contenedor-carrusel-especial-2 {
+    border: 1px #cccccc solid;
+    width: 38%;
+    height: 350px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    transition: 0.25s;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.imagen-tajeta-especial{
+    width: 100%;
+    object-fit: cover;
+}
+
 .contenedor-menu-celular {
     width: 100%;
     height: 100%;
@@ -788,6 +840,53 @@ main {
     box-shadow: 0px 0px 15px #000000;
 }
 
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px 10px;
+    grid-gap: 20px 20px;
+}
+
+.input-1{
+    border-radius: 15px;
+    border: #ffffff 1px solid;
+    width: 70%;
+    min-width: 300px;
+    height: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #EEECEC;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input-2{
+    border-radius: 15px;
+    border: #ffffff 1px solid;
+    width: calc(35% - 13px);
+    min-width: 135px;
+    height: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #EEECEC;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .section-universal-mapa-texto {
     width: 40%;
     height: 400px;
@@ -796,6 +895,34 @@ main {
     justify-content: center;
     align-content: center;
     grid-gap: 20px 0px;
+}
+
+.contenedor-asisitr{
+    border-radius: 30px;
+    background-color: #ffffff50;
+    width: 80%;
+    height: 650px;
+    margin-top: 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    padding: 25px 0px;
+}
+
+.imagen-logo-asistir{
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.contenedor-imagen-grande-especial{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 .frame-mapa {
@@ -842,6 +969,10 @@ main {
 
 .margin-top {
     margin-top: 50px;
+}
+
+.estado-flex-oculto{
+    display: none;
 }
 
 @media screen and (min-width: 1500px) and (max-width: 1599px) {
@@ -1007,12 +1138,83 @@ main {
     .contenedor-galeria-imagenes {
         grid-gap: 20px 20px;
     }
+
+    .tarjeta-contenedor-carrusel-especial {
+        position: absolute; /* La tarjeta tiene posición absoluta dentro del contenedor */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px #cccccc solid;
+        width: 40%;
+        height: 300px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 2;
+        box-shadow: 0px 0px 15px #000000;
+    }
+    
+    .tarjeta-contenedor-carrusel-especial-2 {
+        border: 1px #cccccc solid;
+        width: 38%;
+        height: 250px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1299px) {
     .imagen-principal {
         height: 600px;
     }
+
+    .tarjeta-contenedor-carrusel-especial {
+        position: absolute; /* La tarjeta tiene posición absoluta dentro del contenedor */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px #cccccc solid;
+        width: 40%;
+        height: 300px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 2;
+        box-shadow: 0px 0px 15px #000000;
+    }
+    
+    .tarjeta-contenedor-carrusel-especial-2 {
+        border: 1px #cccccc solid;
+        width: 38%;
+        height: 250px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+
     .contenedor-superpuesto-imagen-principal {
         height: 600px;
         position: absolute;
@@ -1077,6 +1279,42 @@ main {
     .imagen-principal {
         height: 600px;
     }
+
+    .tarjeta-contenedor-carrusel-especial {
+        position: absolute; /* La tarjeta tiene posición absoluta dentro del contenedor */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px #cccccc solid;
+        width: 40%;
+        height: 300px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 2;
+        box-shadow: 0px 0px 15px #000000;
+    }
+    
+    .tarjeta-contenedor-carrusel-especial-2 {
+        border: 1px #cccccc solid;
+        width: 38%;
+        height: 250px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+
     .contenedor-superpuesto-imagen-principal {
         height: 600px;
         position: absolute;
@@ -1154,6 +1392,42 @@ main {
     .imagen-principal {
         height: 600px;
     }
+
+    .tarjeta-contenedor-carrusel-especial {
+        position: absolute; /* La tarjeta tiene posición absoluta dentro del contenedor */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px #cccccc solid;
+        width: 40%;
+        height: 250px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 2;
+        box-shadow: 0px 0px 15px #000000;
+    }
+    
+    .tarjeta-contenedor-carrusel-especial-2 {
+        border: 1px #cccccc solid;
+        width: 38%;
+        height: 200px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+
     .texto-universal-descripcion-section {
         font-weight: lighter;
         font-size: 23px;
@@ -1163,6 +1437,7 @@ main {
         text-align: center;
         font-family: "Inter", sans-serif;
     }
+
     .texto-universal-section {
         color: #ffffff;
         font-weight: bold;
@@ -1244,12 +1519,49 @@ main {
     .imagen-principal {
         height: 500px;
     }
+
+    .tarjeta-contenedor-carrusel-especial {
+        position: absolute; /* La tarjeta tiene posición absoluta dentro del contenedor */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px #cccccc solid;
+        width: 40%;
+        height: 250px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 2;
+        box-shadow: 0px 0px 15px #000000;
+    }
+    
+    .tarjeta-contenedor-carrusel-especial-2 {
+        border: 1px #cccccc solid;
+        width: 38%;
+        height: 200px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+
     .contenedor-superpuesto-imagen-principal {
         height: 500px;
         position: absolute;
         top: 0%;
         left: 0%;
     }
+
     .texto-universal-descripcion-section {
         font-weight: lighter;
         font-size: 23px;
@@ -1259,6 +1571,7 @@ main {
         text-align: center;
         font-family: "Inter", sans-serif;
     }
+
     .texto-universal-section {
         color: #ffffff;
         font-weight: bold;
@@ -1268,6 +1581,7 @@ main {
         text-align: center;
         text-transform: uppercase;
     }
+
     .texto-bienvenida-titulo {
         color: #ffffff;
         font-family: "Istok Web", sans-serif;
@@ -1330,6 +1644,42 @@ main {
     .imagen-logo-principal {
         height: 70%;
     }
+
+    .tarjeta-contenedor-carrusel-especial {
+        position: absolute; /* La tarjeta tiene posición absoluta dentro del contenedor */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px #cccccc solid;
+        width: 40%;
+        height: 230px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 2;
+        box-shadow: 0px 0px 15px #000000;
+    }
+    
+    .tarjeta-contenedor-carrusel-especial-2 {
+        border: 1px #cccccc solid;
+        width: 38%;
+        height: 200px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+    
     .texto-universal-descripcion-section {
         font-weight: lighter;
         font-size: 23px;
@@ -1426,6 +1776,46 @@ main {
     .imagen-principal {
         height: 400px;
     }
+
+    .contenedor-asisitr{
+        width: 90%;
+    }
+
+    .tarjeta-contenedor-carrusel-especial {
+        position: absolute; /* La tarjeta tiene posición absoluta dentro del contenedor */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px #cccccc solid;
+        width: 40%;
+        height: 230px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 2;
+        box-shadow: 0px 0px 15px #000000;
+    }
+    
+    .tarjeta-contenedor-carrusel-especial-2 {
+        border: 1px #cccccc solid;
+        width: 38%;
+        height: 200px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+
     .section-universal-mapa {
         width: 80%;
         height: 400px;
@@ -1555,6 +1945,42 @@ main {
     .imagen-principal {
         height: 400px;
     }
+
+    .tarjeta-contenedor-carrusel-especial {
+        position: absolute; /* La tarjeta tiene posición absoluta dentro del contenedor */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px #cccccc solid;
+        width: 40%;
+        height: 200px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 2;
+        box-shadow: 0px 0px 15px #000000;
+    }
+    
+    .tarjeta-contenedor-carrusel-especial-2 {
+        border: 1px #cccccc solid;
+        width: 38%;
+        height: 190px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+
     .section-universal-mapa {
         width: 80%;
         height: 400px;
@@ -1715,12 +2141,65 @@ main {
         margin-top: 25px;
         margin-bottom: 25px;
     }
+
+    .contenedor-asisitr{
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 500px) and (max-width: 599px) {
     .imagen-principal {
         height: 350px;
     }
+
+    .contenedor-carrusel-especial {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: auto;
+        grid-gap: 25px 25px;
+        position: static;
+    
+    }
+
+    .tarjeta-contenedor-carrusel-especial {
+        border: 1px #cccccc solid;
+        width: 80%;
+        height: 270px;
+        border-radius: 30px;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+    
+    .tarjeta-contenedor-carrusel-especial-2 {
+        border: 1px #cccccc solid;
+        width: 80%;
+        height: 270px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .contenedor-asisitr{
+        width: 90%;
+        margin-top: 12%;
+
+    }
+
     .section-universal-mapa {
         width: 80%;
         height: 400px;
@@ -1941,6 +2420,77 @@ main {
         cursor: pointer;
         filter: invert(1);
     }
+
+    .contenedor-asisitr{
+        width: 90%;
+        margin-top: 16%;
+
+    }
+
+    .input-1{
+        border-radius: 15px;
+        border: #ffffff 1px solid;
+        width: 70%;
+        min-width: 220px;
+        height: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background-color: #EEECEC;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #000000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .input-2{
+        border-radius: 15px;
+        border: #ffffff 1px solid;
+        width: calc(70% - 0px);
+        min-width: 220px;
+        height: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background-color: #EEECEC;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #000000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .tarjeta-contenedor-carrusel-especial {
+        border: 1px #cccccc solid;
+        width: 80%;
+        height: 210px;
+        border-radius: 30px;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+    
+    .tarjeta-contenedor-carrusel-especial-2 {
+        border: 1px #cccccc solid;
+        width: 80%;
+        height: 210px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+
     .section-universal-mapa {
         width: 80%;
         height: 300px;
@@ -2122,16 +2672,31 @@ main {
     .contenedor-superpuesto-imagen-principal-seccion-1 {
         width: 8%;
     }
+    
     .contenedor-superpuesto-imagen-principal-seccion-3 {
         width: 32%;
         display: none;
     }
+
     .ajuste_boton_1 {
         font-size: 20px;
         padding: 10px 40px;
     }
+
     .contenedor-galeria-imagenes {
         grid-gap: 15px 15px;
+    }
+
+    .contenedor-carrusel-especial {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: auto;
+        grid-gap: 25px 25px;
+        position: static;
+    
     }
 }
 
@@ -2139,6 +2704,102 @@ main {
     .imagen-principal {
         height: 300px;
     }
+
+    .formulario{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 80%;
+        height: auto;
+        background-color: #ffffff;
+        border-radius: 15px;
+        padding: 20px 10px;
+        grid-gap: 20px 20px;
+    }
+
+    .contenedor-asisitr{
+        width: 90%;
+        margin-top: 17%;
+
+    }
+
+    .input-1{
+        border-radius: 15px;
+        border: #ffffff 1px solid;
+        width: 70%;
+        min-width: 220px;
+        height: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background-color: #EEECEC;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #000000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .input-2{
+        border-radius: 15px;
+        border: #ffffff 1px solid;
+        width: calc(70% - 0px);
+        min-width: 220px;
+        height: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background-color: #EEECEC;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #000000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .contenedor-carrusel-especial {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: auto;
+        grid-gap: 25px 25px;
+        position: static;
+    
+    }
+
+    .tarjeta-contenedor-carrusel-especial {
+        border: 1px #cccccc solid;
+        width: 80%;
+        height: 190px;
+        border-radius: 30px;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+    
+    .tarjeta-contenedor-carrusel-especial-2 {
+        border: 1px #cccccc solid;
+        width: 80%;
+        height: 190px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+
     .section-universal-mapa {
         width: 80%;
         height: 250px;
@@ -2358,6 +3019,110 @@ main {
     .imagen-principal {
         height: 300px;
     }
+    
+    .formulario{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 80%;
+        height: auto;
+        background-color: #ffffff;
+        border-radius: 15px;
+        padding: 20px 10px;
+        grid-gap: 20px 20px;
+    }
+
+    .imagen-logo-asistir{
+        height: 150px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .contenedor-asisitr{
+        width: 90%;
+        margin-top: 17%;
+    }
+
+    .texto-universal-descripcion-section {
+        font-weight: lighter;
+        font-size: 20px;
+        color: #ffffff;
+        width: 90%;
+        height: auto;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+    }
+
+    .input-1{
+        border-radius: 15px;
+        border: #ffffff 1px solid;
+        width: 80%;
+        min-width: 150px;
+        height: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background-color: #EEECEC;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #000000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .input-2{
+        border-radius: 15px;
+        border: #ffffff 1px solid;
+        width: calc(80%);
+        min-width: 150px;
+        height: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background-color: #EEECEC;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #000000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .tarjeta-contenedor-carrusel-especial {
+        position: absolute; /* La tarjeta tiene posición absoluta dentro del contenedor */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px #cccccc solid;
+        width: 40%;
+        height: 190px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 2;
+        box-shadow: 0px 0px 15px #000000;
+    }
+    
+    .tarjeta-contenedor-carrusel-especial-2 {
+        border: 1px #cccccc solid;
+        width: 38%;
+        height: 190px;
+        border-radius: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        transition: 0.25s;
+        overflow: hidden;
+        z-index: 1;
+    }
+    
     .margin-top {
         margin-top: 0px;
     }
