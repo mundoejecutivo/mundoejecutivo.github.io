@@ -39,27 +39,32 @@ document.addEventListener("DOMContentLoaded", function() {
     var textos = [{
             titulo: "CUMBRE 1000",
             descripcion: "¡Únete a la Cumbre de las 1000 Empresas Más Grandes de México y sé parte de un evento excepcional donde la innovación y las oportunidades se fusionan para impulsar el crecimiento empresarial! Conéctate con líderes visionarios y aprende de las mejores prácticas en el mundo empresarial. ¡No te lo pierdas!",
-            boton: "ASISTIR"
+            boton: "ASISTIR",
+            enlace: "files/asistir.html"
         },
         {
             titulo: "UBICACIÓN",
             descripcion: "¡La Cumbre 1000 te espera en [AQUÍ VA LA UBICACIÓN DEL EVENTO]! Únete a nosotros en este escenario emblemático para ser parte de una experiencia inolvidable. ¡Reserva tu lugar ahora!",
-            boton: "UBICACIÓN"
+            boton: "UBICACIÓN",
+            enlace: "files/mapa.html"
         },
         {
             titulo: "PATROCINAR",
             descripcion: "¡Conviértete en patrocinador de la Cumbre 1000! Únete a nosotros para ser parte de un evento transformador que reúne a líderes globales y agentes de cambio. Conviértete en patrocinador y destaca tu marca ante una audiencia comprometida con la construcción de un futuro sostenible. ¡Únete a nosotros y haz que tu marca sea parte de esta experiencia única!",
-            boton: "PATROCINAR"
+            boton: "PATROCINAR",
+            enlace: "files/patrocinar.html"
         },
         {
             titulo: "AGENDA",
             descripcion: "¡No te pierdas la Cumbre 1000! Descubre todo lo que ofrecemos en nuestra agenda llena de paneles, conferencias y talleres sobre los temas más urgentes de nuestro tiempo. ¡Consulta ahora y asegura tu lugar!",
-            boton: "AGENDA"
+            boton: "AGENDA",
+            enlace: "files/agenda.html"
         },
         {
             titulo: "PANELISTAS",
             descripcion: "¡Descubre a nuestros panelistas estelares en la Cumbre 1000! Conoce a líderes visionarios y expertos innovadores que compartirán su sabiduría. ¡No te pierdas la oportunidad de aprender de los mejores!",
-            boton: "PANELISTAS"
+            boton: "PANELISTAS",
+            enlace: "#id_section_panelistas"
         }
     ]; // Lista de textos correspondientes a las imágenes
     var index = 0; // Índice actual de la imagen
@@ -78,11 +83,14 @@ document.addEventListener("DOMContentLoaded", function() {
         var tituloElement = document.querySelector('.texto-bienvenida-titulo');
         var descripcionElement = document.querySelector('.texto-bienvenida-descripcion');
         var botonElement = document.querySelector('.boton-principal');
+        var enlaceElement = document.querySelector('.as');
 
         // Cambia el texto
         tituloElement.textContent = textos[index].titulo;
         descripcionElement.textContent = textos[index].descripcion;
         botonElement.textContent = textos[index].boton;
+        enlaceElement.href = textos[index].enlace;
+
     }
 
     // Función para actualizar los círculos
@@ -162,183 +170,39 @@ fetch('assets/json/package.json')
 
 
 
-var coverflow = $("#coverflow").flipster({
-    itemContainer: 'ul',
-    // [string|object]
-    // Selector for the container of the flippin' items.
+    function quees_section_1(){
+        document.getElementById('id_quees_section_1').style.display = 'flex';
+        document.getElementById('id_quees_section_2').style.display = 'none';
+        document.getElementById('id_quees_section_3').style.display = 'none';
+    }
 
-    itemSelector: 'li',
-    // [string|object]
-    // Selector for children of `itemContainer` to flip
+    function quees_section_2(){
+        document.getElementById('id_quees_section_1').style.display = 'none';
+        document.getElementById('id_quees_section_2').style.display = 'flex';
+        document.getElementById('id_quees_section_3').style.display = 'none';
+    }
 
-    start: 'center',
-    // ['center'|number]
-    // Zero based index of the starting item, or use 'center' to start in the middle
+    function quees_section_3(){
+        document.getElementById('id_quees_section_1').style.display = 'none';
+        document.getElementById('id_quees_section_2').style.display = 'none';
+        document.getElementById('id_quees_section_3').style.display = 'flex';
 
-    fadeIn: 400,
-    // [milliseconds]
-    // Speed of the fade in animation after items have been setup
-
-    loop: true,
-    // [true|false]
-    // Loop around when the start or end is reached
-
-    autoplay: 5000,
-    // [false|milliseconds]
-    // If a positive number, Flipster will automatically advance to next item after that number of milliseconds
-
-    pauseOnHover: true,
-    // [true|false]
-    // If true, autoplay advancement will pause when Flipster is hovered
-
-    style: 'coverflow',
-    // [coverflow|carousel|flat|...]
-    // Adds a class (e.g. flipster--coverflow) to the flipster element to switch between display styles
-    // Create your own theme in CSS and use this setting to have Flipster add the custom class
-
-    spacing: -0.6,
-    // [number]
-    // Space between items relative to each item's width. 0 for no spacing, negative values to overlap
-
-    click: true,
-    // [true|false]
-    // Clicking an item switches to that item
-
-    keyboard: true,
-    // [true|false]
-    // Enable left/right arrow navigation
-
-    scrollwheel: true,
-    // [true|false]
-    // Enable mousewheel/trackpad navigation; up/left = previous, down/right = next
-
-    touch: true,
-    // [true|false]
-    // Enable swipe navigation for touch devices
-
-    nav: false,
-    // [true|false|'before'|'after']
-    // If not false, Flipster will build an unordered list of the items
-    // Values true or 'before' will insert the navigation before the items, 'after' will append the navigation after the items
-
-    buttons: false,
-    // [true|false|'custom']
-    // If true, Flipster will insert Previous / Next buttons with SVG arrows
-    // If 'custom', Flipster will not insert the arrows and will instead use the values of `buttonPrev` and `buttonNext`
-
-    buttonPrev: 'Previous',
-    // [text|html]
-    // Changes the text for the Previous button
-
-    buttonNext: 'Next',
-    // [text|html]
-    // Changes the text for the Next button
-
-    onItemSwitch: false
-        // [function]
-        // Callback function when items are switched
-        // Arguments received: [currentItem, previousItem]
-});
-
-var myFlipster = $('.my-flipster').flipster(); // It's best to store the element as a variable for easy reference.
-
-myFlipster.flipster('next'); // Next item
-myFlipster.flipster('prev'); // Previous item
-myFlipster.flipster('jump', 0); // Jump to a specific index
-myFlipster.flipster('jump', $('.my-item')); // Jump to a specific item
-myFlipster.flipster('play'); // Resume autoplay
-myFlipster.flipster('play', 5000); // Set autoplay duration
-myFlipster.flipster('pause'); // Pause the autoplay until next jump
-myFlipster.flipster('stop'); // Stop the autoplay entirely
-myFlipster.flipster('index'); // If items are added or removed, you can tell Flipster to reindex
+        document.getElementById('id_quees_section_temas').style.width = '50%';
+    }
 
 
-var coverflow = $("#coverflow2").flipster({
-    itemContainer: 'ul',
-    // [string|object]
-    // Selector for the container of the flippin' items.
 
-    itemSelector: 'li',
-    // [string|object]
-    // Selector for children of `itemContainer` to flip
 
-    start: 'center',
-    // ['center'|number]
-    // Zero based index of the starting item, or use 'center' to start in the middle
 
-    fadeIn: 400,
-    // [milliseconds]
-    // Speed of the fade in animation after items have been setup
 
-    loop: true,
-    // [true|false]
-    // Loop around when the start or end is reached
+    function queincluye(){
+        document.getElementById('id_a_un_clic_1').style.display = 'flex';
+        document.getElementById('id_a_un_clic_2').style.display = 'none';
+        document.getElementById('id_a_un_clic_3').style.display = 'none';
+    }
 
-    autoplay: 5000,
-    // [false|milliseconds]
-    // If a positive number, Flipster will automatically advance to next item after that number of milliseconds
-
-    pauseOnHover: true,
-    // [true|false]
-    // If true, autoplay advancement will pause when Flipster is hovered
-
-    style: 'coverflow',
-    // [coverflow|carousel|flat|...]
-    // Adds a class (e.g. flipster--coverflow) to the flipster element to switch between display styles
-    // Create your own theme in CSS and use this setting to have Flipster add the custom class
-
-    spacing: -0.6,
-    // [number]
-    // Space between items relative to each item's width. 0 for no spacing, negative values to overlap
-
-    click: true,
-    // [true|false]
-    // Clicking an item switches to that item
-
-    keyboard: true,
-    // [true|false]
-    // Enable left/right arrow navigation
-
-    scrollwheel: true,
-    // [true|false]
-    // Enable mousewheel/trackpad navigation; up/left = previous, down/right = next
-
-    touch: true,
-    // [true|false]
-    // Enable swipe navigation for touch devices
-
-    nav: false,
-    // [true|false|'before'|'after']
-    // If not false, Flipster will build an unordered list of the items
-    // Values true or 'before' will insert the navigation before the items, 'after' will append the navigation after the items
-
-    buttons: false,
-    // [true|false|'custom']
-    // If true, Flipster will insert Previous / Next buttons with SVG arrows
-    // If 'custom', Flipster will not insert the arrows and will instead use the values of `buttonPrev` and `buttonNext`
-
-    buttonPrev: 'Previous',
-    // [text|html]
-    // Changes the text for the Previous button
-
-    buttonNext: 'Next',
-    // [text|html]
-    // Changes the text for the Next button
-
-    onItemSwitch: false
-        // [function]
-        // Callback function when items are switched
-        // Arguments received: [currentItem, previousItem]
-});
-
-var myFlipster = $('.my-flipster').flipster(); // It's best to store the element as a variable for easy reference.
-
-myFlipster.flipster('next'); // Next item
-myFlipster.flipster('prev'); // Previous item
-myFlipster.flipster('jump', 0); // Jump to a specific index
-myFlipster.flipster('jump', $('.my-item')); // Jump to a specific item
-myFlipster.flipster('play'); // Resume autoplay
-myFlipster.flipster('play', 5000); // Set autoplay duration
-myFlipster.flipster('pause'); // Pause the autoplay until next jump
-myFlipster.flipster('stop'); // Stop the autoplay entirely
-myFlipster.flipster('index'); // If items are added or removed, you can tell Flipster to reindex
+    function queconsigo(){
+        document.getElementById('id_a_un_clic_1').style.display = 'none';
+        document.getElementById('id_a_un_clic_2').style.display = 'flex';
+        document.getElementById('id_a_un_clic_3').style.display = 'none';
+    }
