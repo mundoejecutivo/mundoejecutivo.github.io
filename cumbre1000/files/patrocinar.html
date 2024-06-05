@@ -26,7 +26,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
-    <header class="header" id="mi-contenedor" style="background-color: #001329;">
+    <header class="header" id="mi-contenedor" style="background-color: #002150;">
         <nav class="nav">
             <div class="contenedor-logo">
                 <img src="../assets/images/logo.png" title="CUMBRE 1000 ASISTIR" title="CUMBRE 1000 ASISTIR" class="imagen-logo-2">
@@ -56,23 +56,29 @@
 
         <div class="contenedor-asisitr">
             <div class="contenedor-boton-section">
-                <img src="../assets/images/logo.png" alt="" title="" class="imagen-logo-asistir">
+                <img src="../assets/images/logo.png" alt="CUMBRE 1000" title="CUMBRE 1000" class="imagen-logo-asistir">
             </div>
             <p class="texto-universal-descripcion-section">Estás a un paso de patrocinar el mayor evento de México. ¡Prepárate y transformemos la industria juntos!</p>
-            <form action="" method="POST" class="formulario">
-                <input type="text" class="input-1" placeholder="Nombre completo" required>
-                <input type="email" class="input-1" placeholder="CORREO ELECTRÓNICO" required>
+            <form action="https://php.embluemail.com/Integraciones/form_events/emblue_events.php" method="POST" class="formulario">
+                <div class="contenedor-input-formulario">
+                    <input type="text" name="nombre" class="input-1" placeholder="Nombre completo" required>
+                    <input type="email" name="email" class="input-1" placeholder="CORREO ELECTRÓNICO" required>
 
-                <input type="text" class="input-2" placeholder="EMPRESA" required>
-                <input type="text" class="input-2" placeholder="TELÉFONO" required>
+                    <input type="text" name="empresa" class="input-2" placeholder="EMPRESA" required>
+                    <input type="text" name="telefono" class="input-2" placeholder="TELÉFONO" required>
 
-                <input type="text" class="input-2" placeholder="CARGO" required>
-                <input type="text" class="input-2" placeholder="GIRO EMPRESARIAL" required>
+                    <input type="text" name="cargo" class="input-2" placeholder="CARGO" required>
+                    <input type="text" name="giro_empresarial" class="input-2" placeholder="GIRO EMPRESARIAL" required>
+                </div>
 
+                
+                <div class="contenedor-boton-section">
+                    <button class="boton-principal ajuste_boton_1">PATROCINAR</button>
+                </div>
+                <input type="hidden" placeholder="me_cumbre1000_2024_patrocinio" value="me_cumbre1000_2024_patrocinio" name="evento_1000" />
+                <input type="hidden" name="token" value="25a91aa11d0443c1ace59204a43c71d8" />
+                <input type="hidden" name="redir" value="https://cloudstorage.embluemail.com/clientes/Templates/redirec_forms.html" />
             </form>
-            <div class="contenedor-boton-section">
-                <button class="boton-principal ajuste_boton_1">PATROCINAR</button>
-            </div>
         </div>
 
     </main>
