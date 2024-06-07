@@ -22,9 +22,12 @@ function cambiarImagenSegunFecha() {
     else {
         document.getElementById("imagen_ancla").src = "../assets/images/logo.webp";
     }
+    console.log("Imagen cambiada según la fecha:", document.getElementById("imagen_ancla").src);
 }
 
-window.onload = cambiarImagenSegunFecha;
+window.onload = function() {
+    cambiarImagenSegunFecha();
+};
 /* --------------------------------------------------------- */
 /* ESTE CÓDIGO ES EL RESPONSABLE DE CAMBIAR EL LOGO |  FINAL */
 /* --------------------------------------------------------- */
@@ -49,6 +52,7 @@ imagenesLogo.forEach((imagen) => {
     enlace.appendChild(imagenClonada);
     
     imagen.parentNode.replaceChild(enlace, imagen);
+    console.log("Logo enlazado con:", enlace.href);
 });
 /* --------------------------------------------------------- */
 /* ESTE CÓDIGO ES EL RESPONSABLE DE ENLAZAR EL LOGO |  FINAL */
@@ -66,6 +70,7 @@ var urlActual = window.location.href;
 var barraCopiar = document.querySelector('.barra_copiar');
 
 barraCopiar.textContent = urlActual;
+console.log("URL copiada:", barraCopiar.textContent);
 
 function copiarAlPortapapeles() {
 
@@ -246,6 +251,7 @@ document.addEventListener('copy', function(e) {
 
         e.clipboardData.setData('text/plain', markedText);
     }
+    console.log("Texto copiado con marca de agua:", markedText);
 });  
 /* -------------------------------------------------------------------------------------------------- */
 /* ESTE CÓDIGO ES EL RESPONSABLE DE PONERLE LA MARCA DE AGUA CUANDO SE COPIA Y PEGA UN TEXTO |  FINAL */
@@ -260,6 +266,7 @@ document.addEventListener('copy', function(e) {
 /* -------------------------------------------------------------------------- */
 function menu_celular(){
     document.getElementById("id_contenedor_menu_celular").style.display = 'flex';
+    console.log("Menú celular abierto.");
 }
 
 function cerrar_celular(){
@@ -278,7 +285,36 @@ function cerrar_celular(){
         // Reiniciar la animación para futuras aperturas del menú
         contenedorMenu.style.animation = '';
     }, 250); // La duración de la animación es de 0.25s, así que esperamos ese tiempo antes de ocultar el menú
+    console.log("Menú celular cerrado.");
 }
 /* -------------------------------------------------------------------------- */
 /* ESTE CÓDIGO ES EL RESPONSABLE DEL MENÚ EN SU VERSIÓN PARA CELULAR |  FINAL */
 /* -------------------------------------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* ESTE CÓDIGO ES EL RESPONSABLE DE PONERLE CLASES A LOS TEXTOS QUE ESTÉN DENTRO DEL CONTENEDOR "contenedor_textos_nota" | INICIO */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+document.addEventListener("DOMContentLoaded", function() {
+
+    var contenedor = document.querySelector('.contenedor_textos_nota');
+    
+    var parrafos = contenedor.querySelectorAll('p');
+    parrafos.forEach(function(parrafo) {
+        parrafo.classList.add('texto_nota');
+    });
+    
+    for (var i = 1; i <= 6; i++) {
+        var encabezados = contenedor.querySelectorAll('h' + i);
+        encabezados.forEach(function(encabezado) {
+            encabezado.classList.add('texto_nota_h' + i);
+        });
+    }
+    console.log("Clases añadidas a los textos.");
+});
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* ESTE CÓDIGO ES EL RESPONSABLE DE PONERLE CLASES A LOS TEXTOS QUE ESTÉN DENTRO DEL CONTENEDOR "contenedor_textos_nota" |  FINAL */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
