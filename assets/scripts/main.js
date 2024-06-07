@@ -6,90 +6,42 @@ function logo_cosas(id) {
     });
 }
 
-function cambiarImagenSegunFecha() {
-    var ahora = new Date();
-    var mes = ahora.getMonth() + 1; 
-
-    if (mes == 11 && (ahora.getDate() == 1 || ahora.getDate() == 2)) {
-        document.getElementById("imagen_ancla").src = "assets/images/logo.webp";
-    } 
-    else if (mes == 12 && ahora.getDate() >= 1 && ahora.getDate() <= 25) {
-        document.getElementById("imagen_ancla").src = "assets/images/logo.webp";
-    } 
-    else {
-        document.getElementById("imagen_ancla").src = "assets/images/logo.webp";
-    }
-}
-
-window.onload = cambiarImagenSegunFecha;
-
-
-
-
-
+/* HOLA SOY EL NUEVO SLIDER  | INICIO */
 const circulos = document.querySelectorAll('.circulos');
 const imagenPrincipal = document.querySelector('.imagen_principal');
 const textoImagenPrincipal = document.querySelector('.texto_imagen_principal');
 const descripcionImagenPrincipal = document.querySelector('.texto_imagen_principal_descripcion');
+const imagenesOcultas = document.querySelectorAll('.imagen_oculta');
 const numCirculos = circulos.length;
 let indiceCirculo = 0;
 
 function cambiarTamanioCirculos() {
     const siguienteCirculo = (indiceCirculo + 1) % numCirculos;
-    
-    circulos.forEach((circulo, index) => {
-        if (index === indiceCirculo) {
-            circulo.style.width = '20px';
-            circulo.style.height = '20px';
-        } else {
-            circulo.style.width = '10px';
-            circulo.style.height = '10px';
-        }
-    });
-    
-    imagenPrincipal.style.opacity = '0';
-    
-    setTimeout(() => {
-        switch (indiceCirculo) {
-            case 0:
-                imagenPrincipal.src = 'assets/images/big-city.webp';
-                textoImagenPrincipal.textContent = 'tecnología';
-                descripcionImagenPrincipal.textContent = 'Titulo de la nota perteneciente a la sección tecnología';
-                break;
-            case 1:
-                imagenPrincipal.src = 'assets/images/hamster.webp';
-                textoImagenPrincipal.textContent = 'tecnología';
-                descripcionImagenPrincipal.textContent = 'Titulo de la nota perteneciente a la sección tecnología';
-                break;
-            case 2:
-                imagenPrincipal.src = 'assets/images/big-city.webp';
-                textoImagenPrincipal.textContent = 'sociales';
-                descripcionImagenPrincipal.textContent = 'Titulo de la nota perteneciente a la sección sociales';
-                break;
-            case 3:
-                imagenPrincipal.src = 'assets/images/hamster.webp';
-                textoImagenPrincipal.textContent = 'entretenimiento';
-                descripcionImagenPrincipal.textContent = 'Titulo de la nota perteneciente a la sección entretenimiento';
-                break;
-            case 4:
-                imagenPrincipal.src = 'assets/images/big-city.webp';
-                textoImagenPrincipal.textContent = 'mascotas';
-                descripcionImagenPrincipal.textContent = 'Titulo de la nota perteneciente a la sección mascotas';
-                break;
-            default:
-                // Espacio para agregar más secciones al carrusel del inicio
-                break;
-        }
 
+    circulos.forEach((circulo, index) => {
+        circulo.style.width = index === indiceCirculo ? '20px' : '10px';
+        circulo.style.height = index === indiceCirculo ? '20px' : '10px';
+    });
+
+    imagenPrincipal.style.opacity = '0';
+
+    setTimeout(() => {
+        const imagen = imagenesOcultas[indiceCirculo];
+        imagenPrincipal.src = imagen.src;
+        textoImagenPrincipal.textContent = imagen.getAttribute('data-titulo');
+        descripcionImagenPrincipal.textContent = imagen.getAttribute('data-descripcion');
         imagenPrincipal.style.opacity = '1';
-    }, 500); 
-    
+    }, 500);
+
     indiceCirculo = siguienteCirculo;
-    
+
     setTimeout(cambiarTamanioCirculos, 5000);
 }
 
 cambiarTamanioCirculos();
+/* HOLA SOY EL NUEVO SLIDER  |  FINAL */
+
+
 
 
 const imagenesLogo = document.querySelectorAll('.imagen_logo');
@@ -97,20 +49,20 @@ const imagenesLogo = document.querySelectorAll('.imagen_logo');
 imagenesLogo.forEach((imagen) => {
 
     const enlace = document.createElement('a');
-    
+
     enlace.href = 'index.html'; /* Sustituir este por el enlace final de la página de inicio */
-    
+
     const imagenClonada = imagen.cloneNode(true);
-    
+
     enlace.appendChild(imagenClonada);
-    
+
     imagen.parentNode.replaceChild(enlace, imagen);
 });
 
 
 
-function newsleterfuncion(){
-    location.href="https://whatsapp.com/channel/0029Va8xy5CISTkErjPEba3I";
+function newsleterfuncion() {
+    location.href = "https://whatsapp.com/channel/0029Va8xy5CISTkErjPEba3I";
 }
 
 
@@ -120,11 +72,11 @@ function newsleterfuncion(){
 /* -------------------------------------------------------------------------- */
 /* ESTE CÓDIGO ES EL RESPONSABLE DEL MENÚ EN SU VERSIÓN PARA CELULAR | INICIO */
 /* -------------------------------------------------------------------------- */
-function menu_celular(){
+function menu_celular() {
     document.getElementById("id_contenedor_menu_celular").style.display = 'flex';
 }
 
-function cerrar_celular(){
+function cerrar_celular() {
     var audio = new Audio('assets/efects/pop.mp3');
     audio.oncanplaythrough = function() {
         audio.play();
