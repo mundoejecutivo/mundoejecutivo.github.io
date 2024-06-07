@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
 
 
@@ -12,9 +13,9 @@
     <meta name="keywords" content="COSAS, MX, México, REVISTA COSAS MX, REVISTA">
     <meta name="author" content="REVISTA COSAS MX">
     <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Language" content="es">
     <meta name="copyright" content="2024, REVISTA COSAS MX">
     <meta name="last-modified" content="2024-05-06">
+    <link rel="canonical" href="../index.html">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="REVISTA COSAS MX">
@@ -25,81 +26,85 @@
     <meta name="twitter:site" content="@COSAS">
     <meta name="twitter:title" content="REVISTA COSAS MX">
     <meta name="twitter:description" content="TI, el evento que reúne lo mejor del mundo de la tecnología con el ámbito empresarial, para formar un mejor futuro.">
-<!-- ---------- -->
-<!-- Tags | Fin -->
-<!-- ---------- -->
+    <!-- ---------- -->
+    <!-- Tags | Fin -->
+    <!-- ---------- -->
 
 
 
-<title>COSAS | Nota</title>
+    <title>COSAS | Nota</title>
 
 
 
-<!-- -------------- -->
-<!-- Icono | Inicio -->
-<!-- -------------- -->
+    <!-- -------------- -->
+    <!-- Icono | Inicio -->
+    <!-- -------------- -->
     <link rel="icon" href="../assets/images/icon.png" type="img/png">
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="icon" sizes="192x192" href="icon.png">
-<!-- ----------- -->
-<!-- Icono | Fin -->
-<!-- ----------- -->
+    <!-- ----------- -->
+    <!-- Icono | Fin -->
+    <!-- ----------- -->
 
 
 
-<!-- ---------------- -->
-<!-- Estilos | Inicio -->
-<!-- ---------------- -->
+    <!-- ---------------- -->
+    <!-- Estilos | Inicio -->
+    <!-- ---------------- -->
     <link rel="stylesheet" href="../assets/styles/main.css">
-<!-- ------------- -->
-<!-- Estilos | Fin -->
-<!-- ------------- -->
+    <!-- ------------- -->
+    <!-- Estilos | Fin -->
+    <!-- ------------- -->
 
 
 
-<!-- --------------------- -->
-<!-- Google Fonts | Inicio -->
-<!-- --------------------- -->
+    <!-- --------------------- -->
+    <!-- Google Fonts | Inicio -->
+    <!-- --------------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-<!-- ------------------ -->
-<!-- Google Fonts | Fin -->
-<!-- ------------------ -->
+    <!-- ------------------ -->
+    <!-- Google Fonts | Fin -->
+    <!-- ------------------ -->
 
 
 
-<!-- ----------------- -->
-<!-- Créditos | Inicio -->
-<!-- ----------------- -->
-    
-<!-- -------------- -->
-<!-- Créditos | Fin -->
-<!-- -------------- -->
+    <!-- ----------------- -->
+    <!-- Créditos | Inicio -->
+    <!-- ----------------- -->
+
+    <!-- -------------- -->
+    <!-- Créditos | Fin -->
+    <!-- -------------- -->
 
 
 
 </head>
-<body>
+
+<body class="body_contenido_xa">
     <div class="ancla">
         <div class="ancla_seccion_1">
             <div class="ancla_seccion_1_opciones">
             </div>
             <div class="ancla_seccion_1_opciones_2">
                 <a class="enlace_imagen_logo">
-                    <img src="../assets/images/logo.webp" alt="COSAS" class="imagen_logo" id="imagen_ancla">
+                    <img src="../assets/images/logo.webp" alt="COSAS" class="imagen_logo" id="imagen_ancla" title="REVISTA COSAS">
                 </a>
             </div>
             <div class="ancla_seccion_1_opciones_3">
-                <form action="" data-form="" class="form_lupa">
-                    <input type="text" name="" value="" placeholder="Buscar" class="input_lupa" data-form="">
+                <form action="aqui_agrega_tu_action.php" data-form="" class="form_lupa">
+                    <input type="text" name="buscar" value="" placeholder="Buscar" class="input_lupa" data-form="">
                     <button type="submit" name="button" value="" data-form="" class="button_lupa">
-                        <img src="../assets/images/lupa.png" alt="Lupa" class="imagen_lupa">
+                        <img src="../assets/images/lupa.png" alt="Lupa" class="imagen_lupa" title="Buscar">
                     </button>
                 </form>
+                <div class="contenedor_imagen_menu">
+                    <img src="../assets/images/menu.png" alt="COSAS" class="imagen_menu" onClick="javascript:menu_celular()" title="Menú">
+                </div>
             </div>
         </div>
-        <div class="ancla_seccion_3">
+        <div class="ancla_seccion_2" style="height: calc(30% - 5px);">
             <div class="ancla_opciones">
                 <p class="texto_ancla_opciones">ENTRETENIMIENTO</p>
             </div>
@@ -112,140 +117,220 @@
             <div class="ancla_opciones">
                 <p class="texto_ancla_opciones">ENTREVISTAS</p>
             </div>
+            <div class="ancla_opciones">
+                <p class="texto_ancla_opciones">MASCOTAS</p>
+            </div>
+            <div class="ancla_opciones">
+                <p class="texto_ancla_opciones">LIFESTYLE</p>
+            </div>
+            <div class="ancla_opciones">
+                <p class="texto_ancla_opciones">ACTUALIDAD</p>
+            </div>
         </div>
         <div class="progress-container">
             <div class="progress-bar" id="progressBar"></div>
         </div>
     </div>
 
-    <section class="contenedor_principal">
+
+
+    <section class="contenedor_principal_xa">
         <div class="contenedor_imagen_principal" style="background-color: #000000;">
-            <img src="../assets/images/big-city.webp" alt="Alt de imagen principal" class="imagen_principal">
+            <img src="../assets/images/big-city.webp" alt="Alt de imagen principal" class="imagen_principal" title="Aquí se debe generar el título de la nota" onerror="src='../assets/images/sinimagen.png';">
             <div class="contenedor_texto_imagen_principal">
                 <h1 class="texto_imagen_principal_nota">Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos</h1>
             </div>
         </div>
     </section>
 
-    <div class="main_2">
-        <div class="main_2_seccion_contenido">
-            <section class="contenedor_universal" style="margin-bottom: 0px;">
-                <div class="contenedor_opciones_nota">
-                    <div class="opciones_nota_2" style="justify-content: start;">
-                        <a href="../index.html">
-                            <img src="../assets/images/inicio.png" alt="ALT de opciones que aparecen debajo de la imagen de la nota" class="imagen_opciones_nota">
-                        </a>
-                    </div>
-                    <div class="opciones_nota">
-                        <p class="texto_opciones_nota">07/05/2024</p>
-                    </div>
-                    <div class="opciones_nota">
-                        <p class="texto_opciones_nota">Por: Karla Patricia Palacios</p>
-                    </div>
-                    <div class="opciones_nota">
-                        <p class="texto_opciones_nota">Tecnología</p>
-                    </div>
-                    <div class="opciones_nota_2" style="justify-content: end;">
-                        <img src="../assets/images/compartir.png" alt="ALT de opciones que aparecen debajo de la imagen de la nota" class="imagen_opciones_nota" onClick="javascript:abrir_ventana_emergente()">
-                    </div>
-                </div>
-            </section>
 
 
-            <section class="contenedor_universal" style="padding-bottom: 50px;">
-                <div class="cotenedor_opciones_nota">
-                    <button id="boton_reiniciar" style="display: none;" class="boton_controladores">Reiniciar</button>
-                    <button id="boton_pausa" style="display: none;" class="boton_controladores">Pausar</button>
-                    <button id="boton_reanudar" style="display: none;" class="boton_controladores">Reanudar</button>
-                    <img src="../assets/images/voz.png" alt="ALT Dictado por voz" class="imagen_opciones_nota" id="boton_voz" style="margin-left: 10px;">
-                </div>
-
-
-                <div class="contenedor_textos_nota">
-
-                    <!-- AQUÍ VA EL CONTENIDO DE LA NOTA, LOS PÁRRAFOS, H1, H2, H3, H4, IMÁGENES, INSERTADOS, ETC. -->
-                    <h1 class="texto_nota_h1">Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos (Soy un h1)</h1>
-                
-                    <p class="texto_nota">La reconocida empresaria y diseñadora de moda, Carolina Herrera, ha compartido sus recomendaciones sobre los mejores cortes para cabello rizado, ofreciendo consejos valiosos para quienes buscan lucir unos rizos impecables.</p>
-                    <p class="texto_nota">El cabello rizado, conocido por sus rizos en zigzag que van desde la raíz hasta las puntas y su capacidad de volver a su forma natural después de estirarse, puede resultar complicado de peinar y estilizar. Además, tiende a ser propenso a la resequedad y al frizz.</p>
-                    <p class="texto_nota">En este sentido, Herrera destaca la importancia de elegir un corte que se adapte a la textura y forma natural del cabello rizado para realzar su belleza y facilitar su cuidado diario. Con sus consejos, lograr unos rizos increíbles está al alcance de todos.</p>
-
-                    <h2 class="texto_nota_h2">Carolina Herrera: Los mejores cortes para cabello rizado (Soy un h2)</h2>
-
-                    <p class="texto_nota">Los cortes de cabello recomendados por la empresaria y diseñadora de moda podrían ofrecer una solución efectiva para controlar tu melena, resaltando su forma natural sin necesidad de alterarla drásticamente.</p>
-                
-                    <p class="texto_nota">Es fundamental asegurarte de que cualquiera de estos cortes armonice con tus rasgos faciales y proporciones.</p>
-
-                </div>
-            </section>
-
-            
-
-            <section class="contenedor_universal" style="border-bottom: 0px; margin-bottom: 0px;">
-                <div class="contenedor_titulo_seccion">
-                    <img src="../assets/images/icon.png" alt="COSAS" class="imagen_contenedor_titulo_seccion" onClick="logo_cosas('id_imagen_logo_2')" id="id_imagen_logo_2" loading="lazy">
-                    <p class="texto_contenedor_titulo_seccion">TECNOLOGÍA</p>
-                </div>
-                <div class="tarjeta_nota_universal efecto_hover_1" data-tarjeta="">
-                    <div class="tarjeta_nota_universal_seccion_1">
-                        <img src="../assets/images/big-city.webp" alt="Alt de imagen de la tarjeta" class="imagen_tarjeta" loading="lazy">
-                    </div>
-                    <div class="tarjeta_nota_universal_seccion_2">
-                        <p class="texto_tarjeta_nota_1">mascotas</p>
-                        <p class="texto_tarjeta_nota_2">Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos</p>
-                        <p class="texto_tarjeta_nota_3">Por: Karla Palacios</p>
-                        <p class="texto_tarjeta_nota_3">8 de marzo del 2024</p>
-                    </div>
-                </div>
-                <div class="tarjeta_nota_universal efecto_hover_1" data-tarjeta="">
-                    <div class="tarjeta_nota_universal_seccion_1">
-                        <img src="../assets/images/big-city.webp" alt="Alt de imagen de la tarjeta" class="imagen_tarjeta" loading="lazy">
-                    </div>
-                    <div class="tarjeta_nota_universal_seccion_2">
-                        <p class="texto_tarjeta_nota_1">mascotas</p>
-                        <p class="texto_tarjeta_nota_2">Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos</p>
-                        <p class="texto_tarjeta_nota_3">Por: Karla Palacios</p>
-                        <p class="texto_tarjeta_nota_3">8 de marzo del 2024</p>
-                    </div>
-                </div>
-                <div class="tarjeta_nota_universal efecto_hover_1" data-tarjeta="">
-                    <div class="tarjeta_nota_universal_seccion_1">
-                        <img src="../assets/images/big-city.webp" alt="Alt de imagen de la tarjeta" class="imagen_tarjeta" loading="lazy">
-                    </div>
-                    <div class="tarjeta_nota_universal_seccion_2">
-                        <p class="texto_tarjeta_nota_1">mascotas</p>
-                        <p class="texto_tarjeta_nota_2">Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos</p>
-                        <p class="texto_tarjeta_nota_3">Por: Karla Palacios</p>
-                        <p class="texto_tarjeta_nota_3">8 de marzo del 2024</p>
-                    </div>
-                </div>
-                <div class="tarjeta_nota_universal efecto_hover_1" data-tarjeta="">
-                    <div class="tarjeta_nota_universal_seccion_1">
-                        <img src="../assets/images/big-city.webp" alt="Alt de imagen de la tarjeta" class="imagen_tarjeta" loading="lazy">
-                    </div>
-                    <div class="tarjeta_nota_universal_seccion_2">
-                        <p class="texto_tarjeta_nota_1">mascotas</p>
-                        <p class="texto_tarjeta_nota_2">Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos</p>
-                        <p class="texto_tarjeta_nota_3">Por: Karla Palacios</p>
-                        <p class="texto_tarjeta_nota_3">8 de marzo del 2024</p>
-                    </div>
-                </div>
-            </section>
+    <section class="contenedor_universal_nota_xa">
+        <div class="opciones_nota_2">
+            <a href="../index.html">
+                <img src="../assets/images/inicio.png" alt="ALT de opciones que aparecen debajo de la imagen de la nota" class="imagen_opciones_nota" title="Inicio">
+            </a>
         </div>
-
-
-
-        <div class="main_2_seccion_fuera_del_contenido">
-            <section class="contenedor_inferior">
-                <p class="texto_derechos_de_autor">Copyright © 2024 Revista Cosas México</p>
-            </section>
+        <div class="opciones_nota">
+            <p class="texto_opciones_nota">07/05/2024</p>
         </div>
+        <div class="opciones_nota">
+            <p class="texto_opciones_nota">Por: Karla Patricia Palacios</p>
+        </div>
+        <div class="opciones_nota">
+            <p class="texto_opciones_nota">Tecnología / Tecnología / Tecnología</p>
+        </div>
+        <div class="opciones_nota_2">
+            <div class="boton_compartir" onClick="javascript:abrir_ventana_emergente()">
+                <p class="texto_opciones_nota_2">Compartir</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="contenedor_universal_nota_xa" style="justify-content: end;">
+        <button id="boton_reiniciar" style="display: none;" class="boton_controladores">Reiniciar</button>
+        <button id="boton_pausa" style="display: none;" class="boton_controladores">Pausar</button>
+        <button id="boton_reanudar" style="display: none;" class="boton_controladores">Reanudar</button>
+        <img src="../assets/images/voz.png" alt="ALT Dictado por voz" class="imagen_opciones_nota" id="boton_voz" style="margin-left: 10px;" title="Dictado">
     </div>
 
 
 
 
-    <!-- SECCIÓN FLOTANTES | Inicio -->
+
+
+
+    <section class="contenedor_universal_nota_articulo_xa">
+        <div class="contenedor_textos_nota">
+            <!-- AQUÍ VA EL CONTENIDO DE LA NOTA, LOS PÁRRAFOS, H1, H2, H3, H4, IMÁGENES, INSERTADOS, ETC. -->
+            <h1>Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos</h1>
+            <p>La reconocida empresaria y diseñadora de moda, Carolina Herrera, ha compartido sus recomendaciones sobre los mejores cortes para cabello rizado, ofreciendo consejos valiosos para quienes buscan lucir unos rizos impecables.</p>
+            <p>El cabello rizado, conocido por sus rizos en zigzag que van desde la raíz hasta las puntas y su capacidad de volver a su forma natural después de estirarse, puede resultar complicado de peinar y estilizar. Además, tiende a ser propenso
+                a la resequedad y al frizz.</p>
+            <p>En este sentido, Herrera destaca la importancia de elegir un corte que se adapte a la textura y forma natural del cabello rizado para realzar su belleza y facilitar su cuidado diario. Con sus consejos, lograr unos rizos increíbles
+                está al alcance de todos.</p>
+            <h2>Carolina Herrera: Los mejores cortes para cabello rizado (Soy un h2)</h2>
+            <p>Los cortes de cabello recomendados por la empresaria y diseñadora de moda podrían ofrecer una solución efectiva para controlar tu melena, resaltando su forma natural sin necesidad de alterarla drásticamente.</p>
+            <p>Es fundamental asegurarte de que cualquiera de estos cortes armonice con tus rasgos faciales y proporciones.</p>
+            <h2>Corte en capas </h2>
+            <p>El corte en capas es una excelente opción para añadir movimiento y disminuir el volumen del cabello. Este estilo implica crear capas cortas a lo largo del pelo, lo que ayuda a evitar que la melena luzca pesada o con forma triangular.</p>
+            <h2>Corte en capas </h2>
+            <p>El corte en capas es una excelente opción para añadir movimiento y disminuir el volumen del cabello. Este estilo implica crear capas cortas a lo largo del pelo, lo que ayuda a evitar que la melena luzca pesada o con forma triangular.</p>
+            <h2>Corte en capas </h2>
+            <p>El corte en capas es una excelente opción para añadir movimiento y disminuir el volumen del cabello. Este estilo implica crear capas cortas a lo largo del pelo, lo que ayuda a evitar que la melena luzca pesada o con forma triangular.</p>
+        </div>
+    </section>
+    <section class="contenedor_universal_nota_tarjetas_xa">
+        <div class="contenedor_titulo_seccion estado_flex">
+            <img src="../assets/images/icon.png" alt="COSAS" class="imagen_contenedor_titulo_seccion" onClick="logo_cosas('id_imagen_logo_9')" id="id_imagen_logo_9" loading="lazy" title="REVISTA COSAS">
+            <p class="texto_contenedor_titulo_seccion">RECOMENDADOS</p>
+        </div>
+        <div class="contenedor_tarjeta_nota_2_xa ajuste_xa" data-tarjeta="">
+            <div class="tarjeta_nota_universal_seccion_1_xa">
+                <img src="../assets/images/big-city.webp" alt="Alt de imagen de la tarjeta" class="imagen_tarjeta" loading="lazy" title="Aquí se debe generar el título de la nota" onerror="src='../assets/images/sinimagen.png';">
+            </div>
+            <div class="tarjeta_nota_universal_seccion_2_xa">
+                <p class="texto_tarjeta_nota_1_xa">mascotas</p>
+                <p class="texto_tarjeta_nota_2_xa">Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos</p>
+                <p class="texto_tarjeta_nota_3_xa">Por: Karla Palacios</p>
+                <p class="texto_tarjeta_nota_3_xa">8 de marzo del 2024</p>
+            </div>
+        </div>
+        <div class="contenedor_tarjeta_nota_2_xa ajuste_xa" data-tarjeta="">
+            <div class="tarjeta_nota_universal_seccion_1_xa">
+                <img src="../assets/images/big-city.webp" alt="Alt de imagen de la tarjeta" class="imagen_tarjeta" loading="lazy" title="Aquí se debe generar el título de la nota" onerror="src='../assets/images/sinimagen.png';">
+            </div>
+            <div class="tarjeta_nota_universal_seccion_2_xa">
+                <p class="texto_tarjeta_nota_1_xa">mascotas</p>
+                <p class="texto_tarjeta_nota_2_xa">Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos</p>
+                <p class="texto_tarjeta_nota_3_xa">Por: Karla Palacios</p>
+                <p class="texto_tarjeta_nota_3_xa">8 de marzo del 2024</p>
+            </div>
+        </div>
+        <div class="contenedor_tarjeta_nota_2_xa ajuste_xa" data-tarjeta="">
+            <div class="tarjeta_nota_universal_seccion_1_xa">
+                <img src="../assets/images/big-city.webp" alt="Alt de imagen de la tarjeta" class="imagen_tarjeta" loading="lazy" title="Aquí se debe generar el título de la nota" onerror="src='../assets/images/sinimagen.png';">
+            </div>
+            <div class="tarjeta_nota_universal_seccion_2_xa">
+                <p class="texto_tarjeta_nota_1_xa">mascotas</p>
+                <p class="texto_tarjeta_nota_2_xa">Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos</p>
+                <p class="texto_tarjeta_nota_3_xa">Por: Karla Palacios</p>
+                <p class="texto_tarjeta_nota_3_xa">8 de marzo del 2024</p>
+            </div>
+        </div>
+        <div class="contenedor_tarjeta_nota_2_xa ajuste_xa" data-tarjeta="">
+            <div class="tarjeta_nota_universal_seccion_1_xa">
+                <img src="../assets/images/big-city.webp" alt="Alt de imagen de la tarjeta" class="imagen_tarjeta" loading="lazy" title="Aquí se debe generar el título de la nota" onerror="src='../assets/images/sinimagen.png';">
+            </div>
+            <div class="tarjeta_nota_universal_seccion_2_xa">
+                <p class="texto_tarjeta_nota_1_xa">mascotas</p>
+                <p class="texto_tarjeta_nota_2_xa">Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos</p>
+                <p class="texto_tarjeta_nota_3_xa">Por: Karla Palacios</p>
+                <p class="texto_tarjeta_nota_3_xa">8 de marzo del 2024</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="contenedor_universal_nota_xa" style="justify-content: center;">
+        <div class="contenedor_titulo_seccion">
+            <img src="../assets/images/icon.png" alt="COSAS" class="imagen_contenedor_titulo_seccion" onClick="logo_cosas('id_imagen_logo_8')" id="id_imagen_logo_8" loading="lazy" title="REVISTA COSAS">
+            <p class="texto_contenedor_titulo_seccion">TECNOLOGÍA</p>
+        </div>
+        <div class="contenedor_tarjeta_nota_2_xa" data-tarjeta="">
+            <div class="tarjeta_nota_universal_seccion_1_xa">
+                <img src="../assets/images/big-city.webp" alt="Alt de imagen de la tarjeta" class="imagen_tarjeta" loading="lazy" title="Aquí se debe generar el título de la nota" onerror="src='../assets/images/sinimagen.png';">
+            </div>
+            <div class="tarjeta_nota_universal_seccion_2_xa">
+                <p class="texto_tarjeta_nota_1_xa">mascotas</p>
+                <p class="texto_tarjeta_nota_2_xa">Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos</p>
+                <p class="texto_tarjeta_nota_3_xa">Por: Karla Palacios</p>
+                <p class="texto_tarjeta_nota_3_xa">8 de marzo del 2024</p>
+            </div>
+        </div>
+        <div class="contenedor_tarjeta_nota_2_xa" data-tarjeta="">
+            <div class="tarjeta_nota_universal_seccion_1_xa">
+                <img src="../assets/images/big-city.webp" alt="Alt de imagen de la tarjeta" class="imagen_tarjeta" loading="lazy" title="Aquí se debe generar el título de la nota" onerror="src='../assets/images/sinimagen.png';">
+            </div>
+            <div class="tarjeta_nota_universal_seccion_2_xa">
+                <p class="texto_tarjeta_nota_1_xa">mascotas</p>
+                <p class="texto_tarjeta_nota_2_xa">Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos</p>
+                <p class="texto_tarjeta_nota_3_xa">Por: Karla Palacios</p>
+                <p class="texto_tarjeta_nota_3_xa">8 de marzo del 2024</p>
+            </div>
+        </div>
+        <div class="contenedor_tarjeta_nota_2_xa" data-tarjeta="">
+            <div class="tarjeta_nota_universal_seccion_1_xa">
+                <img src="../assets/images/big-city.webp" alt="Alt de imagen de la tarjeta" class="imagen_tarjeta" loading="lazy" title="Aquí se debe generar el título de la nota" onerror="src='../assets/images/sinimagen.png';">
+            </div>
+            <div class="tarjeta_nota_universal_seccion_2_xa">
+                <p class="texto_tarjeta_nota_1_xa">mascotas</p>
+                <p class="texto_tarjeta_nota_2_xa">Los 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos</p>
+                <p class="texto_tarjeta_nota_3_xa">Por: Karla Palacios</p>
+                <p class="texto_tarjeta_nota_3_xa">8 de marzo del 2024</p>
+            </div>
+        </div>
+        <div class="contenedor_tarjeta_nota_2_xa" data-tarjeta="">
+            <div class="tarjeta_nota_universal_seccion_1_xa">
+                <img src="../assets/images/big-city.webp" alt="Alt de imagen de la tarjeta" class="imagen_tarjeta" loading="lazy" title="Aquí se debe generar el título de la nota" onerror="src='../assets/images/sinimagen.png';">
+            </div>
+            <div class="tarjeta_nota_universal_seccion_2_xa">
+                <p class="texto_tarjeta_nota_1_xa">mascotas</p>
+                <p class="texto_tarjeta_nota_2_xa">KATE MIDDLETON MANTIENE LA TRADICIÓN Y COMPARTE NUEVA FOTO DE LA PRINCESA CHARLOTTE POR SU NOVENO CUMPLEAÑOSLos 3 errores frecuentes en el emprendimiento: cómo identificarlos y superarlos Los 3 errores frecuentes en el emprendimiento:
+                    cómo identificarlos y superarlos</p>
+                <p class="texto_tarjeta_nota_3_xa">Por: Karla Palacios</p>
+                <p class="texto_tarjeta_nota_3_xa">8 de marzo del 2024</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="main_2_seccion_fuera_del_contenido">
+        <section class="contenedor_inferior">
+            <p class="texto_derechos_de_autor">Copyright © 2024 Revista Cosas México</p>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- -------------------------- -->
+    <!-- SECCIÓN FLOTANTES | INICIO -->
+    <!-- -------------------------- -->
     <div class="contenedor_emergente transicion_arriba" id="id_ventana_emergente">
         <div class="contenedor_emergente_seccion_1">
             <div class="cerrar" onClick="javascript:precerrar()"></div>
@@ -263,7 +348,65 @@
             <img src="../assets/images/whatsapp.png" alt="ALT redes sociales" class="imagen_redes_sociales_compartir" title="Whatsapp" loading="lazy" onclick="compartirEnWhatsapp()">
         </div>
     </div>
-    <!-- SECCIÓN FLOTANTES |  Final -->
+
+
+
+    <div class="contenedor_menu_celular" id="id_contenedor_menu_celular">
+        <div class="contenedor_menu_celular_opciones_logo">
+            <img src="../assets/images/logo.webp" alt="COSAS" class="imagen_logo_celular" title="REVISTA COSAS">
+            <div class="cerrar_celular">
+                <img src="../assets/images/cerrar.png" alt="Lupa" class="imagen_cerrar" onClick="javascript:cerrar_celular()" title="Cerrar">
+            </div>
+        </div>
+
+        <div class="contenedor_menu_celular_opciones">
+            <div class="menu_celular_opciones">
+                <form action="aqui_agrega_tu_action.php" class="form_lupa_celular">
+                    <input type="text" name="buscar" placeholder="Buscar" class="input_buscar_celular">
+                    <button type="submit" name="button" value="" data-form="" class="button_lupa_celular">
+                        <img src="../assets/images/lupa.png" alt="Lupa" class="imagen_lupa" loading="lazy" title="Buscar">
+                    </button>
+                </form>
+            </div>
+            <div class="menu_celular_opciones">
+                <p class="texto_ancla_opciones_celular">ENTRETENIMIENTO</p>
+            </div>
+            <div class="menu_celular_opciones">
+                <p class="texto_ancla_opciones_celular">TECNOLOGÍA</p>
+            </div>
+            <div class="menu_celular_opciones">
+                <p class="texto_ancla_opciones_celular">SOCIALES</p>
+            </div>
+            <div class="menu_celular_opciones">
+                <p class="texto_ancla_opciones_celular">ENTREVISTAS</p>
+            </div>
+            <div class="menu_celular_opciones">
+                <p class="texto_ancla_opciones_celular">MASCOTAS</p>
+            </div>
+            <div class="menu_celular_opciones">
+                <p class="texto_ancla_opciones_celular">LIFESTYLE</p>
+            </div>
+            <div class="menu_celular_opciones">
+                <p class="texto_ancla_opciones_celular">ACTUALIDAD</p>
+            </div>
+        </div>
+
+        <div class="contenedor_menu_celular_opciones_redes_sociales">
+            <p class="texto_redes_sociales_celular">REDES SOCIALES</p>
+            <a href="https://www.facebook.com/revistacosasmx" target="_blank" class="imagen_redes_sociales_celular">
+                <img src="../assets/images/facebook.png" alt="ALT redes sociales" class="imagen_redes_sociales" title="Facebook" loading="lazy">
+            </a>
+            <a href="https://twitter.com/RevistaCosasMx" target="_blank" class="imagen_redes_sociales_celular">
+                <img src="../assets/images/x.png" alt="ALT redes sociales" class="imagen_redes_sociales" title="X" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com/revistacosasmx/?hl=es-la" target="_blank" class="imagen_redes_sociales_celular">
+                <img src="../assets/images/instagram.png" alt="ALT redes sociales" class="imagen_redes_sociales" title="Instagram" loading="lazy">
+            </a>
+        </div>
+    </div>
+    <!-- -------------------------- -->
+    <!-- SECCIÓN FLOTANTES |  FINAL -->
+    <!-- -------------------------- -->
 
 
 
@@ -273,4 +416,5 @@
     <script src="../assets/scripts/main_nota.js"></script>
     <!-- Scripts |  Final -->
 </body>
+
 </html>
