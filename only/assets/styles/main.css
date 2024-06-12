@@ -120,6 +120,10 @@ li{
     color: #ffffff;
 }
 
+.enlace_li:visited{
+    color: #ffffff;
+}
+
 .li{
     width: auto;
     height: 100%;
@@ -134,6 +138,10 @@ li{
 }
 
 .li:link{
+    color: #ffffff;
+}
+
+.li:visited{
     color: #ffffff;
 }
 
@@ -706,6 +714,10 @@ li{
     color: #171717;
 }
 
+.enlace_universal:visited{
+    color: #171717;
+}
+
 .enlace_universal:hover{
     color: #E42722;
 }
@@ -788,6 +800,10 @@ li{
 }
 
 .texto_enlace_tarjeta:link{
+    color: red;
+}
+
+.texto_enlace_tarjeta:visited{
     color: red;
 }
 
