@@ -63,4 +63,29 @@ document.getElementById('id_contenedor_titulo_6').style.width = anchoContenedorT
 
 
 
+// Obtener referencias a las imágenes principal y pequeñas
+const imagenPrincipal = document.querySelector('.imagen_principal');
+const imagenesPequenas = document.querySelectorAll('.imagen_tarjeta_nota_carrusel_bienvenida');
+
+let index = 0;
+
+// Función para cambiar la imagen principal
+function cambiarImagenPrincipal() {
+    // Obtener la URL de la imagen pequeña actual
+    const nuevaImagenURL = imagenesPequenas[index].src;
+    
+    // Actualizar la imagen principal con la URL de la imagen pequeña
+    imagenPrincipal.src = nuevaImagenURL;
+    
+    // Incrementar el índice o volver al principio si llegamos al final
+    index = (index + 1) % imagenesPequenas.length;
+}
+
+// Ejecutar la función cada 5 segundos
+setInterval(cambiarImagenPrincipal, 5000);
+
+
+
+
+
 AOS.init();
