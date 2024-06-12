@@ -146,7 +146,7 @@ li{
 }
 
 .li:hover .enlace_li{
-    color: red;
+    color: #E42722;
 }
 
 .main{
@@ -690,6 +690,40 @@ li{
     transition: 0.25s;
 }
 
+.texto_titulo_articulo:link{
+    color: #171717;
+}
+
+.texto_titulo_articulo:visited{
+    color: #171717;
+}
+
+.texto_titulo_articulo_2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    overflow: hidden;
+    background-color: transparent;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    transition: 0.25s;
+    color: #ffffff;
+}
+
+.texto_titulo_articulo_2:link{
+    color: #ffffff;
+}
+
+.texto_titulo_articulo_2:visited{
+    color: #ffffff;
+}
+
 .enlace_universal{
     width: 100%;
     height: auto;
@@ -743,6 +777,23 @@ li{
     font-size: 13px;
 }
 
+.texto_datos_articulo_2{
+    width: auto;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: end;
+    overflow: hidden;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+}
+
 .contenedor_datos_articulo{
     width: 100%;
     height: auto;
@@ -783,28 +834,63 @@ li{
     height: 800px;
 }
 
-.color_blanco{
-    color: #ffffff;
-}
-
 .texto_enlace_tarjeta:hover{
-    color: red;
+    color: #E42722;
 }
 
 .texto_enlace_tarjeta:active{
-    color: red;
+    color: #E42722;
 }
 
 .texto_enlace_tarjeta:focus{
-    color: red;
+    color: #E42722;
 }
 
 .texto_enlace_tarjeta:link{
-    color: red;
+    color: #171717;
 }
 
 .texto_enlace_tarjeta:visited{
-    color: red;
+    color: #171717;
+}
+
+.texto_enlace_tarjeta_2{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    overflow: hidden;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+.texto_enlace_tarjeta_2:hover{
+    color: #E42722;
+}
+
+.texto_enlace_tarjeta_2:active{
+    color: #E42722;
+}
+
+.texto_enlace_tarjeta_2:focus{
+    color: #E42722;
+}
+
+.texto_enlace_tarjeta_2:link{
+    color: #ffffff;
+}
+
+.texto_enlace_tarjeta_2:visited{
+    color: #ffffff;
 }
 
 .tarjetas_universal:hover .imagen_tarjeta_universal {
@@ -815,14 +901,17 @@ li{
     transform: scale(1.2);
 }
 
+.tarjetas_universal_2:hover .texto_titulo_articulo_2 {
+    color: #E42722;
+}
+
 .tarjetas_universal:hover .texto_titulo_articulo {
-    color: red;
+    color: #E42722;
 }
 
 .tarjetas_universal_2_seccion_2:hover .texto_titulo_articulo {
-    color: red;
+    color: #E42722;
 }
-
 
 
 
@@ -906,6 +995,10 @@ li{
     }
 
     .texto_datos_articulo{
+        font-size: 15px;
+    }
+
+    .texto_datos_articulo_2{
         font-size: 15px;
     }
 
@@ -994,6 +1087,10 @@ li{
         font-size: 15px;
     }
 
+    .texto_datos_articulo_2{
+        font-size: 15px;
+    }
+
     .contenedor_principal{
         height: 400px;
     }
@@ -1076,6 +1173,10 @@ li{
     }
 
     .texto_datos_articulo{
+        font-size: 13px;
+    }
+
+    .texto_datos_articulo_2{
         font-size: 13px;
     }
 
