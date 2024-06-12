@@ -665,6 +665,23 @@ li{
     align-content: start;
     overflow: hidden;
     background-color: transparent;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    transition: 0.25s;
+}
+
+.enlace_universal{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    overflow: hidden;
+    background-color: transparent;
     color: #171717;
     font-weight: 600;
     font-style: normal;
@@ -673,6 +690,19 @@ li{
     font-optical-sizing: auto;
     font-size: 15px;
     transition: 0.25s;
+    background-color: transparent;
+}
+
+.enlace_universal:link{
+    color: #171717;
+}
+
+.enlace_universal:hover{
+    color: #E42722;
+}
+
+.enlace_universal:active{
+    color: #9b110d;
 }
 
 .texto_datos_articulo{
