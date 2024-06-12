@@ -542,9 +542,9 @@ li{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    overflow: hidden;
     background-color: transparent;
     grid-gap: 25px 25px;
+    z-index: 2;
 }
 
 .tarjeta_nota_carrusel_bienvenida{
@@ -733,6 +733,64 @@ li{
 
 
 
+@media screen and (min-width: 1200px) and (max-width: 1499px){
+    .contenedor_principal{
+        height: 800px;
+    }
+
+    .contenedor_superpuesto_principal{
+        height: 800px;
+    }
+
+    .contenedor_superpuesto_principal_seccion_1{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .contenedor_superpuesto_principal_seccion_2{
+        width: 100%;
+        height: 20%;
+    }
+
+    .tarjeta_nota_carrusel_bienvenida{
+        width: 12%;
+        height: 60%;
+    }
+
+    .texto_titulo_bienvenida{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px){
+    .contenedor_principal{
+        height: 700px;
+    }
+
+    .contenedor_superpuesto_principal{
+        height: 700px;
+    }
+
+    .contenedor_superpuesto_principal_seccion_1{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .contenedor_superpuesto_principal_seccion_2{
+        width: 100%;
+        height: 20%;
+    }
+
+    .tarjeta_nota_carrusel_bienvenida{
+        width: 12%;
+        height: 60%;
+    }
+
+    .texto_titulo_bienvenida{
+        font-size: 28px;
+    }
+}
+
 @media screen and (min-width: 800px) and (max-width: 899px){
     .tarjetas_universal{
         width: calc(50% - 25px);
@@ -787,6 +845,25 @@ li{
 
     .fa-solid.fa-magnifying-glass:nth-child(2) {
         display: none;
+    }
+
+    .contenedor_superpuesto_principal_seccion_1{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .contenedor_superpuesto_principal_seccion_2{
+        width: 100%;
+        height: 20%;
+    }
+
+    .tarjeta_nota_carrusel_bienvenida{
+        width: 13%;
+        height: 80%;
+    }
+
+    .texto_titulo_bienvenida{
+        font-size: 28px;
     }
 }
 
@@ -853,6 +930,25 @@ li{
 
     .fa-solid.fa-magnifying-glass:nth-child(2) {
         display: none;
+    }
+
+    .contenedor_superpuesto_principal_seccion_1{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .contenedor_superpuesto_principal_seccion_2{
+        width: 100%;
+        height: 20%;
+    }
+
+    .tarjeta_nota_carrusel_bienvenida{
+        width: 15%;
+        height: 70%;
+    }
+
+    .texto_titulo_bienvenida{
+        font-size: 23px;
     }
 }
 
@@ -928,6 +1024,25 @@ li{
     .fa-solid.fa-magnifying-glass:nth-child(2) {
         display: none;
     }
+
+    .contenedor_superpuesto_principal_seccion_1{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .contenedor_superpuesto_principal_seccion_2{
+        width: 100%;
+        height: 20%;
+    }
+
+    .tarjeta_nota_carrusel_bienvenida{
+        width: 15%;
+        height: 70%;
+    }
+
+    .texto_titulo_bienvenida{
+        font-size: 23px;
+    }
 }
 
 @media screen and (min-width: 500px) and (max-width: 599px){
@@ -997,6 +1112,25 @@ li{
 
     .fa-solid.fa-magnifying-glass:nth-child(2) {
         display: none;
+    }
+
+    .contenedor_superpuesto_principal_seccion_1{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .contenedor_superpuesto_principal_seccion_2{
+        width: 100%;
+        height: 20%;
+    }
+
+    .tarjeta_nota_carrusel_bienvenida{
+        width: 15%;
+        height: 70%;
+    }
+
+    .texto_titulo_bienvenida{
+        font-size: 23px;
     }
 }
 
@@ -1069,6 +1203,26 @@ li{
     .fa-solid.fa-magnifying-glass:nth-child(2) {
         display: none;
     }
+
+    .contenedor_superpuesto_principal_seccion_1{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .contenedor_superpuesto_principal_seccion_2{
+        width: 100%;
+        height: 20%;
+    }
+
+    .tarjeta_nota_carrusel_bienvenida{
+        width: 15%;
+        height: 70%;
+        border-radius: 10px;
+    }
+
+    .texto_titulo_bienvenida{
+        font-size: 23px;
+    }
 }
 
 @media screen and (min-width: 300px) and (max-width: 399px){
@@ -1140,6 +1294,26 @@ li{
     .fa-solid.fa-magnifying-glass:nth-child(2) {
         display: none;
     }
+
+    .contenedor_superpuesto_principal_seccion_1{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .contenedor_superpuesto_principal_seccion_2{
+        width: 100%;
+        height: 20%;
+    }
+
+    .tarjeta_nota_carrusel_bienvenida{
+        width: 15%;
+        height: 70%;
+        border-radius: 10px;
+    }
+
+    .texto_titulo_bienvenida{
+        font-size: 23px;
+    }
 }
 
 @media screen and (min-width: 200px) and (max-width: 299px){
@@ -1210,5 +1384,25 @@ li{
 
     .fa-solid.fa-magnifying-glass:nth-child(2) {
         display: none;
+    }
+
+    .contenedor_superpuesto_principal_seccion_1{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .contenedor_superpuesto_principal_seccion_2{
+        width: 100%;
+        height: 20%;
+    }
+
+    .tarjeta_nota_carrusel_bienvenida{
+        width: 15%;
+        height: 70%;
+        border-radius: 10px;
+    }
+
+    .texto_titulo_bienvenida{
+        font-size: 23px;
     }
 }
