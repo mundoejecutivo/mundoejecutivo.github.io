@@ -65,7 +65,7 @@ document.getElementById('id_contenedor_titulo_6').style.width = anchoContenedorT
 
 // Obtener referencias a las imágenes principal y pequeñas
 const imagenPrincipal = document.querySelector('.imagen_principal');
-const imagenesPequenas = document.querySelectorAll('.imagen_tarjeta_nota_carrusel_bienvenida');
+const imagenesPequenas = document.querySelectorAll('.imagen_rellenar');
 
 let index = 0;
 
