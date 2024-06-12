@@ -113,6 +113,11 @@ li{
     font-size: 15px;
     transition: 0.25s;
     text-transform: uppercase;
+    transition: 0.25s;
+}
+
+.enlace_li:link{
+    color: #ffffff;
 }
 
 .li{
@@ -126,6 +131,10 @@ li{
     padding: 0px 12.5px;
     cursor: pointer;
     transition: 0.25s;
+}
+
+.li:link{
+    color: #ffffff;
 }
 
 .li:hover .enlace_li{
