@@ -729,6 +729,11 @@ li{
         height: auto;
     }
 
+    .tarjetas_universal_2{
+        width: 100%;
+        height: auto;
+    }
+
     .tarjetas_universal_seccion_1{
         width: 100%;
         height: 180px;
@@ -794,6 +799,11 @@ li{
         height: auto;
     }
 
+    .tarjetas_universal_2{
+        width: 100%;
+        height: auto;
+    }
+
     .tarjetas_universal_seccion_1{
         width: 100%;
         height: 275px;
@@ -848,6 +858,11 @@ li{
     .tarjetas_universal{
         width: 100%;
         min-width: 0px;
+        height: auto;
+    }
+
+    .tarjetas_universal_2{
+        width: 100%;
         height: auto;
     }
 
@@ -908,6 +923,11 @@ li{
         height: auto;
     }
 
+    .tarjetas_universal_2{
+        width: 100%;
+        height: auto;
+    }
+
     .tarjetas_universal_seccion_1{
         width: 100%;
         height: 175px;
@@ -962,6 +982,11 @@ li{
     .tarjetas_universal{
         width: 100%;
         min-width: 0px;
+        height: auto;
+    }
+
+    .tarjetas_universal_2{
+        width: 100%;
         height: auto;
     }
 
