@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Función para actualizar la barra de progreso
     function updateProgress() {
         progressItems.forEach((item, index) => {
-            item.classList.remove("active"); // Remueve la clase 'active' de todos
+            item.classList.remove("active");
             if (index < currentFieldset) {
-                item.classList.add("active"); // Marca como activo los anteriores
+                item.classList.add("active");
             }
         });
-        progressItems[currentFieldset].classList.add("active"); // Marca el actual
+        progressItems[currentFieldset].classList.add("active");
     }
 
     nextButtons.forEach(button => {
@@ -23,18 +23,60 @@ document.addEventListener("DOMContentLoaded", function() {
             inputs.forEach(input => {
                 if (!input.value) {
                     allFilled = false;
-                    input.classList.add("error"); // Añade clase de error si no está lleno
+                    input.classList.add("error");
                 } else {
-                    input.classList.remove("error"); // Elimina clase de error si está lleno
+                    input.classList.remove("error");
                 }
             });
 
             if (allFilled) {
-                fieldsets[currentFieldset].style.display = "none"; // Oculta el campo actual
-                currentFieldset++; // Mueve al siguiente
-                fieldsets[currentFieldset].style.display = "block"; // Muestra el siguiente
-                updateProgress(); // Actualiza la barra de progreso
+                fieldsets[currentFieldset].style.display = "none";
+                currentFieldset++;
+                fieldsets[currentFieldset].style.display = "block";
+                updateProgress();
+            } else {
+                alert("Por favor, completa todos los campos obligatorios.");
             }
         });
+    });
+
+    // Evento para manejar el envío del formulario
+    document.getElementById("msform").addEventListener("submit", function(event) {
+        event.preventDefault(); // Previene el envío del formulario por defecto
+
+        const inputs = document.querySelectorAll("input[required]");
+        let allFilled = true;
+
+        inputs.forEach(input => {
+            if (!input.value) {
+                allFilled = false;
+                input.classList.add("error");
+            } else {
+                input.classList.remove("error");
+            }
+        });
+
+        if (!allFilled) {
+            alert("Por favor, completa todos los campos obligatorios antes de enviar.");
+        } else {
+            // Aquí se realiza el envío del formulario con AJAX
+            const formData = new FormData(this); // Obtiene los datos del formulario
+
+            fetch(this.action, {
+                method: this.method,
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert("¡Todos los datos se enviaron correctamente!");
+                    // Opcional: Puedes redirigir al usuario o hacer algo más aquí
+                } else {
+                    alert("Hubo un problema al enviar los datos. Inténtalo de nuevo.");
+                }
+            })
+            .catch(error => {
+                alert("Hubo un error de red. Inténtalo de nuevo.");
+            });
+        }
     });
 });
